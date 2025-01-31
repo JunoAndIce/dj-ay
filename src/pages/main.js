@@ -5,6 +5,7 @@ import useLocoScroll from "../hooks/useLocoScroll";
 import Menu from "../components/menu";
 import { MenuProvider } from '../context/menuContext';
 import { useEffect } from 'react';
+import Projects from '../components/projects';
 
 function Main() {
 
@@ -34,6 +35,7 @@ function Main() {
         <Menu />
         <div className='container flex flex-col md:flex-row'>
           <Hero />
+          <Projects />
         </div>
       </MenuProvider>
     </div>

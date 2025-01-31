@@ -1,17 +1,91 @@
 
 @font-face {
     font-family: font155;
-    src: url("../fonts/font155\ Regular.ttf");
+    src: url("../fonts/Misc/font155\ Regular.ttf");
 }
+
+@font-face {
+    font-family: font168;
+    src: url("../fonts/Misc/font168\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts//HelveticaNeueu/HelveticaNeueRoman.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeueu/HelveticaNeueBlack.otf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }  
+  
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts//HelveticaNeueu/HelveticaNeueHeavy.otf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeueu/HelveticaNeueBold.otf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeueu/HelveticaNeueLight.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeueu/HelveticaNeueThin.otf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeueu/HelveticaNeueUltraLight.otf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  /* @font-face {
+    font-family: "DroidSerif";
+    src: url("DroidSerif-BoldItalic-webfont.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  } */
+
 
 body {
     overflow-x: hidden;
     overflow-y: auto;
 }
 
+.font-155 {
+    font-family: "Font155", serif;
+}
 
-.menu div {
-    background-color: rgba(0, 0, 0, 0.753);
+.font-168 {
+    font-family: "Font168", serif;
+}
+
+.hel_neu {
+    font-family: "Helvetica Neue", serif;
+    font-weight: 700;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(3px);
 }
 
 h1 {
@@ -23,7 +97,9 @@ h2 {
     font-family: "Jersey 20", sans-serif;
 }
 
-li {
+
+
+ul li {
     font-family: "Font155", serif;
 }
 

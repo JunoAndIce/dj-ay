@@ -13,6 +13,7 @@ function Menu() {
 
     // GSAP vars for animating multiple items at once.
     const listItemsRef = useRef([]); // Ref for individual list items
+    const aboutRef = useRef(null);
     const socialListRef = useRef(null); // Ref for the entire social list
 
     // GSAP animations for Menu.
@@ -31,6 +32,15 @@ function Menu() {
             gsap.from(listItemsRef.current, {
                 opacity: 0,
                 y: 20,
+                duration: 0.6,
+                ease: "power3.out",
+                stagger: 0.1,
+            });
+
+
+            gsap.from(aboutRef.current, {
+                opacity: 0,
+                x: -20,
                 duration: 0.6,
                 ease: "power3.out",
                 stagger: 0.1,
@@ -74,7 +84,7 @@ function Menu() {
             <div className='flex justify-between flex-col w-screen h-screen p-6'>
                 <div className='flex mt-[140px] gap-2'>
                     <FontAwesomeIcon className='mt-3' icon={faCircle} size='2xs' />
-                    <ul className="flex flex-col ">
+                    <ul className="flex flex-col">
 
                         {/* Animated list items */}
                         {["Founder", "Creative Director", "Cinemtographer", "Photographer", "Graphic Designer"].map((item, index) => (
@@ -88,7 +98,7 @@ function Menu() {
                 <div className='flex gap-2'>
                     <FontAwesomeIcon className='mt-3' icon={faCircle} size='2xs' />
                     <ul>
-                        <li className="text-3xl uppercase">About Me</li>
+                        <li ref={aboutRef} className="text-3xl uppercase">About Me</li>
                     </ul>
                 </div>
 
