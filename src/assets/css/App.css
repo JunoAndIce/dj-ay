@@ -11,14 +11,14 @@
 
 @font-face {
     font-family: "Helvetica Neue";
-    src: url("../fonts//HelveticaNeueu/HelveticaNeueRoman.otf") format("truetype");
+    src: url("../fonts//HelveticaNeueu/HelveticaNeue-Medium.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
   
   @font-face {
     font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueu/HelveticaNeueBlack.otf") format("truetype");
+    src: url("../fonts/HelveticaNeueu/HelveticaNeueCondensedBlack.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
   }  
@@ -66,6 +66,7 @@
 
 
 body {
+    background-color: black;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -78,9 +79,14 @@ body {
     font-family: "Font168", serif;
 }
 
+.hel_neu_bold {
+    font-family: "Helvetica Neue", serif;
+    font-weight: 800;
+}
+
 .hel_neu {
     font-family: "Helvetica Neue", serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .menu {
