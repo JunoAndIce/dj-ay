@@ -29,7 +29,7 @@ function Navbar() {
         </div>
 
 
-        <span className="p-2 text-sm/1 basis-64 list-none font-thin text-sm hel_neu">
+        <span className="nav_info p-2 text-sm/1 basis-64 list-none font-thin text-sm hel_neu">
           <li>Ekemini Ekwere</li>
           <li>Based in TX</li>
         </span>

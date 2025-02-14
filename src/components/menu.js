@@ -79,40 +79,43 @@ function Menu() {
 
 
     return (
-        <section ref={menuRef} className={`${isMenuOpen ? "block" : "hidden"} menu flex justify-center items-center fixed z-10 w-screen h-screen m-auto`}>
+        <section ref={menuRef} className={`${isMenuOpen ? "block" : "hidden"} menu z-10 fixed`}>
 
-            <div className='flex justify-between flex-col w-screen h-screen p-6'>
-                <div className='flex mt-[140px] gap-2'>
-                    <FontAwesomeIcon className='mt-3' icon={faCircle} size='2xs' />
-                    <ul className="flex flex-col">
+            <div className='flex justify-center items-center'>
+                <div className='flex justify-between flex-col w-screen h-screen p-6'>
+                    <div className='flex mt-[140px] gap-2'>
+                        <FontAwesomeIcon className='mt-3' icon={faCircle} size='2xs' />
+                        <ul className="flex flex-col">
 
-                        {/* Animated list items */}
-                        {["Founder", "Creative Director", "Cinemtographer", "Photographer", "Graphic Designer"].map((item, index) => (
-                            <li key={index} ref={(el) => (listItemsRef.current[index] = el)} className="text-3xl uppercase">
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
+                            {/* Animated list items */}
+                            {["Founder", "Creative Director", "Cinemtographer", "Photographer", "Graphic Designer"].map((item, index) => (
+                                <li key={index} ref={(el) => (listItemsRef.current[index] = el)} className="text-3xl uppercase">
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className='flex gap-2'>
+                        <FontAwesomeIcon className='mt-3' icon={faCircle} size='2xs' />
+                        <ul>
+                            <li ref={aboutRef} className="text-3xl uppercase">About Me</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul ref={socialListRef} className='flex gap-[15vw] justify-center'>
+                            <li><FontAwesomeIcon icon={faXTwitter} /></li>
+                            <li><FontAwesomeIcon icon={faInstagram} /></li>
+                            <li><FontAwesomeIcon icon={faTiktok} /></li>
+                            <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                            <li><FontAwesomeIcon icon={faFacebook} /></li>
+                        </ul>
+                    </div>
+
                 </div>
-
-                <div className='flex gap-2'>
-                    <FontAwesomeIcon className='mt-3' icon={faCircle} size='2xs' />
-                    <ul>
-                        <li ref={aboutRef} className="text-3xl uppercase">About Me</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul ref={socialListRef} className='flex gap-[15vw] justify-center'>
-                        <li><FontAwesomeIcon icon={faXTwitter} /></li>
-                        <li><FontAwesomeIcon icon={faInstagram} /></li>
-                        <li><FontAwesomeIcon icon={faTiktok} /></li>
-                        <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                        <li><FontAwesomeIcon icon={faFacebook} /></li>
-                    </ul>
-                </div>
-
             </div>
+
         </section>
 
     );

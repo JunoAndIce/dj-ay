@@ -1,7 +1,5 @@
 import { useLayoutEffect } from "react";
-
 import LocomotiveScroll from "locomotive-scroll";
-
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -13,20 +11,31 @@ const useLocoScroll = (start) => {
 
     const scrollEl = document.querySelector(".main");
 
+    const isHorizontal = window.innerWidth > 768; // Enable horizontal scroll on large screens
+
     let locoScroll = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
-      multiplier: .6
+      multiplier: 0.6,
+      direction: isHorizontal ? "horizontal" : "vertical" // Switch direction based on screen size
     });
 
     locoScroll.on("scroll", ScrollTrigger.update);
 
     ScrollTrigger.scrollerProxy(scrollEl, {
+      scrollLeft(value) {
+        if (locoScroll) {
+          return arguments.length
+            ? locoScroll.scrollTo(value, { duration: 0, disableLerp: true })
+            : locoScroll.scroll.instance.scroll.x; // Get horizontal scroll position
+        }
+        return null;
+      },
       scrollTop(value) {
         if (locoScroll) {
           return arguments.length
             ? locoScroll.scrollTo(value, { duration: 0, disableLerp: true })
-            : locoScroll.scroll.instance.scroll.y;
+            : locoScroll.scroll.instance.scroll.y; // Get vertical scroll position
         }
         return null;
       },
@@ -38,18 +47,14 @@ const useLocoScroll = (start) => {
           height: window.innerHeight
         };
       },
-      pinType: document.querySelector(".main").style.transform
-        ? "transform"
-        : "fixed"
+      pinType: scrollEl.style.transform ? "transform" : "fixed"
     });
 
-    const lsUpdate = () => {
+    const updateLocoScroll = () => {
       if (locoScroll) {
         locoScroll.update();
       }
     };
-
-    // ScrollTrigger.defaults({ scroller: scrollEl });
 
     ScrollTrigger.defaults({
       scroller:
@@ -57,14 +62,29 @@ const useLocoScroll = (start) => {
         scrollEl
     });
 
-    ScrollTrigger.addEventListener("refresh", lsUpdate);
-    //ScrollTrigger.refresh();
+    ScrollTrigger.addEventListener("refresh", updateLocoScroll);
+    
+    // Update Locomotive Scroll when resizing
+    const handleResize = () => {
+      const newDirection = window.innerWidth > 768 ? "horizontal" : "vertical";
+      locoScroll.destroy(); // Destroy previous instance
+      locoScroll = new LocomotiveScroll({
+        el: scrollEl,
+        smooth: true,
+        multiplier: 0.6,
+        direction: newDirection
+      });
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener("resize", handleResize);
 
     console.log("Loco-scroll initiated.");
 
     return () => {
       locoScroll.destroy();
-      ScrollTrigger.removeEventListener("refresh", lsUpdate);
+      ScrollTrigger.removeEventListener("refresh", updateLocoScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, [start]);
 };

@@ -1,119 +1,130 @@
-
 @font-face {
-    font-family: font155;
-    src: url("../fonts/Misc/font155\ Regular.ttf");
+  font-family: font155;
+  src: url("../fonts/Misc/font155\ Regular.ttf");
 }
 
 @font-face {
-    font-family: font168;
-    src: url("../fonts/Misc/font168\ Regular.ttf");
+  font-family: font168;
+  src: url("../fonts/Misc/font168\ Regular.ttf");
 }
 
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts//HelveticaNeueu/HelveticaNeue-Medium.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Helvetica Neue";
+  src: url("../fonts//HelveticaNeueu/HelveticaNeue-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-  
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueu/HelveticaNeueCondensedBlack.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-  }  
-  
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts//HelveticaNeueu/HelveticaNeueHeavy.otf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueu/HelveticaNeueBold.otf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-  }
 
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueu/HelveticaNeueLight.otf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueu/HelveticaNeueCondensedBlack.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueu/HelveticaNeueThin.otf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts//HelveticaNeueu/HelveticaNeueHeavy.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeueu/HelveticaNeueUltraLight.otf") format("truetype");
-    font-weight: 200;
-    font-style: normal;
-  }
-  /* @font-face {
-    font-family: "DroidSerif";
-    src: url("DroidSerif-BoldItalic-webfont.ttf") format("truetype");
-    font-weight: bold;
-    font-style: italic;
-  } */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueu/HelveticaNeueBold.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueu/HelveticaNeueLight.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueu/HelveticaNeueThin.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueu/HelveticaNeueUltraLight.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
 
 body {
-    background-color: black;
-    overflow-x: hidden;
-    overflow-y: auto;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .font-155 {
-    font-family: "Font155", serif;
+  font-family: "Font155", serif;
 }
 
 .font-168 {
-    font-family: "Font168", serif;
+  font-family: "Font168", serif;
 }
 
 .hel_neu_bold {
-    font-family: "Helvetica Neue", serif;
-    font-weight: 800;
+  font-family: "Helvetica Neue", serif;
+  font-weight: 800;
 }
 
 .hel_neu {
-    font-family: "Helvetica Neue", serif;
-    font-weight: 500;
+  font-family: "Helvetica Neue", serif;
+  font-weight: 500;
 }
 
 .menu {
-    background-color: rgba(0, 0, 0, 0.61);
-    backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(3px);
 }
 
 h1 {
-    font-family: "Great Vibes", serif;
+  font-family: "Great Vibes", serif;
 }
 
 
 h2 {
-    font-family: "Jersey 20", sans-serif;
+  font-family: "Jersey 20", sans-serif;
 }
 
-
-
 ul li {
-    font-family: "Font155", serif;
+  font-family: "Font155", serif;
+}
+
+.image-wrapper {
+  &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.0) 0%,
+        rgba(0, 0, 0, 0.0) 70%,
+        /* // These three 'smooth' out the fade. */
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0.7)  90%,
+        rgba(0, 0, 0, 0.9)  95%,
+        /* // Solid to match the background. */
+        rgba(0, 0, 0, 1.0)  100%
+      );
+    };
+  img { width: 100%; }
 }
 
 
 /* HERO SECTION */
 
 .videoTag {
-/* Make video to at least 100% wide and tall */
-    filter: grayscale(70%);
-    filter: brightness(40%);
+  /* Make video to at least 100% wide and tall */
+  filter: grayscale(70%);
+  filter: brightness(40%);
 }
