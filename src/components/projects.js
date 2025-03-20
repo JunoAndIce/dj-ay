@@ -1,18 +1,19 @@
-import proj_img from "../assets/images/hero_test.webp";
-import McMurry from "../assets/images/McMurry.webp";
-import hightower from "../assets/images/hightower.webp";
+import projectsData from "./projectsData";
 import ProjectCard from "./projectCards";
-
-const projectsData = [
-    { image: proj_img, title: "SELECTQB", yearStartTop: "20", yearStartBot: "21" },
-    { image: McMurry, title: "McMurry", yearStartTop: "20", yearStartBot: "23"},
-    { image: hightower, title: "Hightower", yearStartTop: "20", yearStartBot: "21" },
-    { image: proj_img, title: "SELECTQB", yearStartTop: "20", yearStartBot: "21" }
-];
+import { useRef, useState } from "react";
+import useProjectAnimations from "../hooks/useProjectAnimations";
 
 function Projects() {
+    const componentRef = useRef(null);
+    useProjectAnimations(componentRef);
+
+    const [expandedCard, setExpandedCard] = useState(null);
+    const handleCardClick = (index) => {
+        setExpandedCard(expandedCard === index ? null : index);
+    };
+
     return (
-        <section className="projects ">
+        <section ref={componentRef} className="projects mb-[550px]">
             <div className="flex items-center flex-col p-6 gap-3 w-screen">
                 <h3 className="mt-[100px] hel_neu">Creative Directed</h3>
 
@@ -25,7 +26,9 @@ function Projects() {
                             yearStartTop={project.yearStartTop} 
                             yearStartBot={project.yearStartBot} 
                             yearEndTop={project.yearEndTop} 
-                            yearEndBot={project.yearEndBot} 
+                            yearEndBot={project.yearEndBot}
+                            isExpanded={expandedCard === index}
+                            onClick={() => handleCardClick(index)}
                         />
                     ))}
                 </div>
