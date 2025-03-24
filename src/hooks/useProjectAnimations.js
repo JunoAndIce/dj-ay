@@ -19,10 +19,10 @@ const useProjectAnimations = (componentRef) => {
                         ease: "power3.out",
                         scrollTrigger: {
                             trigger: card,
-                            start: "top 20%", // Starts animation when 80% of card is in view
+                            start: "-110% 20%", // Starts animation when 80% of card is in view
                             end: "top 20%", 
                             scrub: false,
-                            markers: true,
+                            // markers: true,
                             toggleActions: "play none none none", // Play once when it enters
                         }
                     }

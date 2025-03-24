@@ -44,14 +44,11 @@ function ProjectCard({ image, title, yearStartTop, yearStartBot, yearEndTop, yea
                     )}
                 </div>
             </div>
-            {isExpanded && (
-            <div ref={textRef} className='text-center text-sm/4 hel_neu_text mt-5 border transition-all overflow-hidden'>
-            
+            <div ref={textRef} className={`text-center text-sm/4 hel_neu_text mt-5 border transition-all overflow-hidden ${isExpanded ? 'expanded' : ''}`}>
                 <div className='p-2'>
                     <LoremIpsum p={1} avgSentencesPerParagraph={3}/>
                 </div>
             </div>
-            )}
         </div>
     );
 }

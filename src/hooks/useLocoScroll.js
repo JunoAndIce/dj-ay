@@ -59,7 +59,12 @@ const useLocoScroll = (start) => {
     ScrollTrigger.defaults({
       scroller:
         document.documentElement.classList.contains("has-scroll-smooth") &&
-        scrollEl
+        scrollEl,
+      snap: {
+        snapTo: 1 / (document.querySelectorAll(".main > section").length - 1), // Snap to each section
+        duration: { min: 0.2, max: 0.8 }, // Duration range for snapping
+        ease: "power1.inOut" // Easing function for snapping
+      }
     });
 
     ScrollTrigger.addEventListener("refresh", updateLocoScroll);

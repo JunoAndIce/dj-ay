@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import useTypedText from '../hooks/useTyped';
 import video from "../assets/video/ek.mp4";
+import useHeroAnimations from "../hooks/useHeroAnimations";
+import { useRef } from 'react';
 
 function Hero() {
   const typedRef = useTypedText([
@@ -12,8 +14,12 @@ function Hero() {
     '<i>Multidisciplinary</i>'
   ]);
 
+  const componentRef = useRef(null);
+
+  useHeroAnimations(componentRef);
+
   return (
-    <section className="hero">
+    <section ref={componentRef} className="hero">
       <div className="relative flex justify-center min-h-screen min-w-[100vw] md:items-center">
         {/* Video Background */}
         <video className='videoTag fixed object-cover h-screen w-screen z-[-1000]' autoPlay muted loop playsInline title="Background Video">
