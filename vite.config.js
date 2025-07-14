@@ -13,5 +13,5 @@ export default defineConfig({
       defaultExtension: 'glsl',
     }),
   ],
-  base: ""
+  base: "/dj-ay"
 });
