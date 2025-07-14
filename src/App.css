@@ -1,11 +1,122 @@
-*{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "tailwindcss";
+
+
+
+* {}
+
+body {
+  background-color: #000000;
 }
 
-body{
-  background-color: #000000;
+
+:root {
+  --color-background-surface: 255 255 255;
+  --color-divider-primary: 255, 255, 255, 0.1;
+}
+
+#canvas-container {
+  /* Or the parent of your Canvas component */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+nav.navbar {
+  box-shadow: none;
+}
+
+#webApp {
+  z-index: 1;
+}
+
+.card_img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  color: transparent;
+}
+
+.card_bg {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgb(var(--color-background-surface) / 0.9) 36%, rgb(var(--color-background-surface)) 47%);
+}
+
+.type-headline-xxs {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -.05em;
+  line-height: 1;
+}
+
+.type-headline-xs {
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -.05em;
+  line-height: 1;
+}
+
+.type-label-md {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 1rem;
+  /* letter-spacing: .04em; */
+  line-height: 1.25;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.type-body-sm {
+  font-family: "Inter", sans-serif;
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  line-height: 1.23;
+}
+
+@media (min-width: 75rem) {
+    .type-emphasis-lg {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}
+
+.type-emphasis-lg {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 900;
+    letter-spacing: -.03em;
+    line-height: 1.25;
+}
+
+.bg-divider-primary {
+  background-color: rgba(var(--color-divider-primary));
+}
+
+.menu-overlay {
+  background-color: black !important;
+  color: white;
+}
+
+.container-width {
+  width: clamp(320px, 100%, 1564px);
+}
+
+@media (min-width: 90rem) {
+    .container-padding {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+.container-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+footer.footer {
+  --bulma-footer-padding: 3rem 1.5rem 3rem;
 }

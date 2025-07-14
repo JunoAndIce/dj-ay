@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { OrbitControls } from '@react-three/drei';
 import Wave from './Wave';
 
-const Scene = () => {
+const Scene = forwardRef((props, ref) => {
   return (
     <>
-      <Wave />
+      <Wave ref={ref}/>
       {/* <OrbitControls enableZoom /> */}
     </>
   );
-};
+});
 
 export default Scene;

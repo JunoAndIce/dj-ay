@@ -16,10 +16,10 @@ export default function useMusicAnalyser(audioUrl = '/assets/music/rush.mp3', ff
       sound.setLoop(true);
       sound.setVolume(0.5);
 
-      const onClick = () => {
-        sound.play();
-        window.removeEventListener('click', onClick);
-      };
+      // const onClick = () => {
+      //   sound.play();
+      //   window.removeEventListener('click', onClick);
+      // };
 
       window.addEventListener('click', onClick);
     });

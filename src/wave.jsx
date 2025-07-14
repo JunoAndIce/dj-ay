@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { forwardRef, useImperativeHandle, useRef } from 'react';
 import { useFrame, extend } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useControls } from 'leva';
@@ -19,7 +19,7 @@ const WaveShaderMaterial = shaderMaterial(
         uRed: 1.0,
         uGreen: 1.0,
         uBlue: 1.0,
-        uColor: new THREE.Color('gold'),
+        uColor: new THREE.Color(1.0, 0.8, 0.0),
         uResolution: new THREE.Vector2(window.innerWidth, window.innerHeight),
 
     },
@@ -37,13 +37,19 @@ const params = {
 
 extend({ WaveShaderMaterial });
 
-const Wave = () => {
+const Wave = forwardRef((props, ref) => {
 
     const materialRef = useRef();
     const meshRef = useRef();
     const lightRef = useRef();
 
     const analyser = useMusicAnalyser('src/assets/music/rush.mp3', 32);
+
+    useImperativeHandle(ref, () => ({
+        setColor: (color) => {
+            materialRef.current.uColor.set(color)
+        },
+    }))
 
     // const gui = new GUI();
     // const colorsFolder = gui.addFolder('Colors');
@@ -93,6 +99,6 @@ const Wave = () => {
             </mesh>
         </>
     );
-};
+});
 
 export default Wave;
