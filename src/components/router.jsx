@@ -14,7 +14,7 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/dj-ay',
     element: <Layout />,
     children: [
       {
