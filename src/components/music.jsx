@@ -2,6 +2,8 @@ import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import HeroWebp from '../assets/images/hero.webp'
+import mix1 from '../assets/images/mix1.webp'
+import mix2 from '../assets/images/mix2.webp'
 
 const Music = () => {
     return (
@@ -21,20 +23,20 @@ const Music = () => {
 
                             <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/Tae95nkZj_o'>
                                 <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\mix1.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={mix1} />
 
                                 </div>
-                                <p class="type-emphasis-lg">Afrobeats vs Dancehall Mix</p>
-                                <p class="type-body-sm">True Colors: Houston</p>
+                                <p className="type-emphasis-lg">Afrobeats vs Dancehall Mix</p>
+                                <p className="type-body-sm">True Colors: Houston</p>
                             </a>
 
                             <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/U7MXgvYQ2h0'>
                                 <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\mix2.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={mix2} />
 
                                 </div>
-                                <p class="type-emphasis-lg">DJ A.Y VERSATILE </p>
-                                <p class="type-body-sm">Jaiye Room Mix</p>
+                                <p className="type-emphasis-lg">DJ A.Y VERSATILE </p>
+                                <p className="type-body-sm">Jaiye Room Mix</p>
                             </a>
 
                         </div>

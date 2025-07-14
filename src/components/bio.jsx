@@ -6,6 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import Scene from '../scene';
 import heroImg from '../assets/images/AYO.webp'
+import party from '../assets/images/party.webp'
+import stand from '../assets/images/stand.webp'
+import festival from '../assets/images/festival.webp'
+import action from '../assets/images/action.webp'
+import clubs from '../assets/images/Clubs.webp'
 
 const Bio = () => {
 
@@ -63,31 +68,31 @@ const Bio = () => {
 
                             <div className='flex flex-col cell'>
                                 <div className='mb-2 aspect-2/3'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\party.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={party} />
                                 </div>
                             </div>
 
                             <div className='flex flex-col cell'>
                                 <div className='mb-2 aspect-2/3'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\stand.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={stand} />
                                 </div>
                             </div>
 
                             <div className='flex flex-col cell'>
                                 <div className='mb-2 aspect-2/3'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\festival.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={festival} />
                                 </div>
                             </div>
 
                             <div className='flex flex-col cell'>
                                 <div className='mb-2 aspect-2/3'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\action.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={action} />
                                 </div>
                             </div>
 
                             <div className='flex flex-col cell'>
                                 <div className='mb-2 aspect-2/3'>
-                                    <img className='!h-full w-full rounded-md object-cover' src='src\assets\images\clubs.webp' />
+                                    <img className='!h-full w-full rounded-md object-cover' src={clubs} />
                                 </div>
                             </div>
                         </div>

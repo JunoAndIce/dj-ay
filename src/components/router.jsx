@@ -1,38 +1,21 @@
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Home from '../pages/home';
-import AboutMe from '../pages/aboutMe';
-import News from '../pages/news';
-// import Contact from '../pages/contact'; // Make sure this is not commented
+import React from 'react';
+import { createHashRouter, RouterProvider, Outlet } from 'react-router-dom';
+import routes from '../routes/routes';
 
-const Layout = () => {
-  return (
-    <>
-      <Outlet />
-    </>
-  );
-};
+const Layout = () => (
+  <main>
+    <Outlet />
+  </main>
+);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/dj-ay',
+    path: '/',
     element: <Layout />,
-    children: [
-      {
-        index: true, // matches '/'
-        element: <Home />
-      },
-      {
-        path: 'aboutme',
-        element: <AboutMe />
-      },
-      {
-        path: 'news',
-        element: <News />
-      }
-    ]
-  }
+    children: routes,
+  },
 ]);
 
-export default function Router() {
+export default function AppRouter() {
   return <RouterProvider router={router} />;
 }

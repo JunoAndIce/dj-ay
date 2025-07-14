@@ -2,7 +2,7 @@ import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import HeroWebp from '../assets/images/hero.webp'
-
+import logo from '../assets/images/logo.webp'
 const Hero = () => {
 
     const divStyle = {
@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
                 <div className='flex flex-col items-center gap-8 text-center h-[50%] p-12 bg-black/95 absolute bottom-0 w-full'>
                     <div className=''>
-                        <img className='' src='src/assets/images/logo.png' alt='Logo'></img>
+                        <img className='' src={logo} alt='DJ A.Y Main Logo'></img>
                     </div>
 
                     <div className=''>

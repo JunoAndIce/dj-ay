@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useMenu } from '../context/menuProvider';
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const { isMenuOpen, closeMenu } = useMenu();
@@ -51,9 +52,9 @@ const Menu = () => {
       className="menu bg-black text-white mt-[4.5rem] p-6 fixed inset-0 z-50"
     >
       <ul ref={listRef} className="flex flex-col items-center gap-30 type-headline-xxs uppercase">
-        <a href='/'><li>Home</li></a>
-        <a href='/aboutme'><li>About Me</li></a>
-        <a href='/news'><li>News</li></a>
+        <Link to='/'><li>Home</li></Link>
+        <Link to='/about-me'><li>About Me</li></Link>
+        <Link to='/news'><li>News</li></Link>
         <a><li>Tours</li></a>
         <a><li>My Music</li></a>
         <a><li>Book</li></a>

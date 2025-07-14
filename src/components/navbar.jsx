@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useMenu } from '../context/menuProvider';
 import Hamburger from 'hamburger-react';
+import logo from '../assets/images/logo.webp'
 
 const Navbar = () => {
   const { isMenuOpen, toggleMenu } = useMenu();
@@ -45,7 +46,7 @@ const Navbar = () => {
               className={`h-10 transition-opacity duration-300 ease-in-out ${
                 isMenuOpen ? 'opacity-0' : 'opacity-100'
               }`}
-              src='src/assets/images/logo.png'
+              src={logo}
               alt='Logo'
             />
           </a>
