@@ -59,6 +59,20 @@ nav.navbar {
   line-height: 1;
 }
 
+.type-headline-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -.02em;
+  line-height: 1;
+}
+
+@media (min-width: 90rem) {
+  .type-headline-sm {
+    font-size: 4rem;
+  }
+}
+
 .type-label-md {
   font-family: "Inter Tight", sans-serif;
   font-size: 1rem;
@@ -77,22 +91,36 @@ nav.navbar {
 }
 
 @media (min-width: 75rem) {
-    .type-emphasis-lg {
-        font-size: 1.25rem;
-        line-height: 1.2;
-    }
+  .type-emphasis-lg {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
 }
 
 .type-emphasis-lg {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 900;
-    letter-spacing: -.03em;
-    line-height: 1.25;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 900;
+  letter-spacing: -.03em;
+  line-height: 1.25;
+}
+
+
+.type-body-md {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  font-size: 1rem;
+  line-height: 1.25;
+
 }
 
 .bg-divider-primary {
   background-color: rgba(var(--color-divider-primary));
+}
+
+.border-divider-primary {
+  border-color: rgba(var(--color-divider-primary));
 }
 
 .menu-overlay {
@@ -105,15 +133,15 @@ nav.navbar {
 }
 
 @media (min-width: 90rem) {
-    .container-padding {
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
+  .container-padding {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 .container-padding {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 

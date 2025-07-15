@@ -10,7 +10,7 @@ const Music = () => {
         <>
             <section className='section p-10'>
 
-                <div className=''>
+                <div className='md:px-50'>
                     <div className=''>
                         <p className='md:text-[3rem] text-xl font-extrabold mb-5'>MY MIXES</p>
                         <div className="h-[1px] w-full bg-divider-primary"></div>

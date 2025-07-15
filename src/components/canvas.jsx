@@ -2,8 +2,9 @@ import { Suspense } from 'react';
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
 import { Canvas } from '@react-three/fiber';
 import Scene from '../scene';
+import { useRef } from 'react';
 
-const Canvas = () => {
+const MainCanvas = () => {
 
     const meshRef = useRef()
 
@@ -30,4 +31,4 @@ const Canvas = () => {
     )
 }
 
-export default Canvas;
+export default MainCanvas;
