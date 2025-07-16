@@ -22,7 +22,7 @@ const AboutMe = () => {
                     <Navbar />
                     <Menu />
                     <Bio />
-                    <Social />
+                    {/* <Social /> */}
                     <Footer />
                 </div>
             </MenuProvider>

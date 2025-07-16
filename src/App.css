@@ -8,6 +8,34 @@ body {
   background-color: #000000;
 }
 
+* {
+  --layout-responsive-spacing-outer-margin-sm: 12px;
+  --layout-responsive-spacing-outer-margin-md: 20px;
+  --layout-responsive-spacing-outer-margin-lg: 24px;
+
+}
+
+@media (min-width: 90rem) {
+  * {
+
+    --layout-responsive-spacing-outer-margin-sm: 28px;
+    --layout-responsive-spacing-outer-margin-md: 36px;
+    --layout-responsive-spacing-outer-margin-lg: 96px;
+  }
+}
+
+.pb-layout-responsive-spacing-outer-margin-md {
+  padding-bottom: var(--layout-responsive-spacing-outer-margin-md);
+}
+
+.pt-layout-responsive-spacing-outer-margin-lg {
+  padding-top: var(--layout-responsive-spacing-outer-margin-lg);
+}
+
+.px-layout-responsive-spacing-outer-margin-lg {
+  padding-left: var(--layout-responsive-spacing-outer-margin-lg);
+  padding-right: var(--layout-responsive-spacing-outer-margin-lg);
+}
 
 :root {
   --color-background-surface: 255 255 255;
@@ -147,4 +175,45 @@ nav.navbar {
 
 footer.footer {
   --bulma-footer-padding: 3rem 1.5rem 3rem;
+}
+
+/* ! HOVER EFFECTS  */
+.fa-youtube:hover {
+  color: rgb(255, 0, 0);
+  transition: filter 0.3s ease;
+}
+
+.fa-x-twitter:hover {
+  color: rgb(29, 161, 242);
+}
+
+.fa-soundcloud:hover {
+  color: rgb(255, 85, 0);
+  transition: filter 0.3s ease;
+}
+
+.fa-instagram:hover {
+  color: rgb(225, 48, 108);
+  transition: filter 0.3s ease;
+}
+
+.fa-linkedin:hover {
+  color: rgb(0, 119, 181);
+  transition: filter 0.3s ease;
+}
+
+.fa-envelope:hover {
+  color: rgb(244, 180, 0);
+  transition: filter 0.3s ease;
+}
+
+.fa-github:hover {
+  color: rgb(45, 186, 78);
+  transition: filter 0.3s ease;
+}
+
+.fa-tiktok:hover {
+  filter: drop-shadow(0.06em 0.03em 0 rgba(255, 0, 80, 0.75))
+          drop-shadow(-0.055em -0.05em 0 rgba(0, 242, 234, 0.75));
+  transition: filter 0.3s ease;
 }

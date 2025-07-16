@@ -23,7 +23,7 @@ const Home = () => {
                     <About />
                     <Testimonials />
                     <Music />
-                    <Social />
+                    {/* <Social /> */}
                     <Footer />
                 </div>
             </MenuProvider>

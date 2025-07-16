@@ -8,9 +8,9 @@ import mix2 from '../assets/images/mix2.webp'
 const Music = () => {
     return (
         <>
-            <section className='section p-10'>
+            <section className='section mb-20'>
 
-                <div className='md:px-50'>
+                <div className='md:px-15 lg:px-35'>
                     <div className=''>
                         <p className='md:text-[3rem] text-xl font-extrabold mb-5'>MY MIXES</p>
                         <div className="h-[1px] w-full bg-divider-primary"></div>
@@ -18,7 +18,7 @@ const Music = () => {
                     </div>
 
 
-                    <div className='m-auto fixed-grid has-5-cols-tablet has-1-cols-mobile !mt-10'>
+                    <div className='m-auto fixed-grid has-5-cols-tablet has-1-cols-mobile !mt-10 overflow-hidden'>
                         <div className='grid is-gap-5'>
 
                             <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/Tae95nkZj_o'>

@@ -11,7 +11,7 @@ const Testimonials = () => {
         <>
             <section className='section mt-20'>
 
-                <div className='md:px-50'>
+                <div className='md:px-15 lg:px-35'>
                     <div className="flex w-full flex-col gap-8 rounded-lg sm:flex-row">
                         <div class="aspect-square w-full flex-shrink-0 sm:min-w-[50%] sm:max-w-[50%] md:w-[344px] md:min-w-[344px] lg:w-[408px] lg:min-w-[408px]">
                             <img alt="Lucky Zhang" loading="lazy" width="1224" height="1224" decoding="async" data-nimg="1" class="h-full w-full rounded-lg object-cover" src={Casting} style={{ color: 'transparent' }} />
