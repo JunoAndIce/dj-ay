@@ -5,13 +5,46 @@ import HeroWebp from '../assets/images/hero.webp'
 import Casting from '../assets/images/casting.webp'
 import Apparel from '../assets/images/apparel.webp'
 import RVeggies from '../assets/images/rveggies.webp'
-
+import festival from '../assets/images/Festival.webp'
+import Norsu from '../assets/images/norsu-logo.webp'
 const Testimonials = () => {
     return (
         <>
-            <section className='section mt-20'>
+            <section className='section'>
 
                 <div className='md:px-15 lg:px-35'>
+                    <div class="mb-12 relative">
+                        <figure className='image absolute brightness-35'>
+                            <img
+                                src={festival}
+                                className='aspect-2/3 md:aspect-6/3 w-full h-full object-cover object-[center_45%]'
+                            />
+                        </figure>
+                        <div className='absolute bottom-3 px-3 '>
+                            <div className='flex flex-col gap-3 md:w-200 md:p-20'>
+                                <figure className='image is-128x128 is-hidden-tablet'>
+                                    <img className='' src={Norsu} />
+                                </figure>
+                                <figure className='image is-hidden-mobile'>
+                                    <img className='' src={Norsu} />
+                                </figure>
+                                <div className=''>
+                                    <p class="type-body-md-special text-white mb-4">From our very first pop-up, DJ A.Y understood what Norsu stands for—bold presence,
+                                        creative flow, and unapologetic style. His sound elevated our spaces, turned casual shoppers into loyal fans,
+                                        and made every event feel like a movement. There’s a reason we keep bringing him back:
+                                        he doesn’t just play music—he builds moments that people remember.</p>
+                                        <p class="type-body-md-special ">
+                                        <strong class="font-bold">Clothing Brand<br />Hwy 6 Studios Brand
+                                            <a class="underline" href="https://www.hwy6studios.com" target="_blank" rel="noopener noreferrer">
+                                            </a>
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
                     <div className="flex w-full flex-col gap-8 rounded-lg sm:flex-row">
                         <div class="aspect-square w-full flex-shrink-0 sm:min-w-[50%] sm:max-w-[50%] md:w-[344px] md:min-w-[344px] lg:w-[408px] lg:min-w-[408px]">
                             <img alt="Lucky Zhang" loading="lazy" width="1224" height="1224" decoding="async" data-nimg="1" class="h-full w-full rounded-lg object-cover" src={Casting} style={{ color: 'transparent' }} />
@@ -73,7 +106,7 @@ const Testimonials = () => {
                             <div class="type-body-md max-w-[600px]">
                                 <div class="rich-text">
                                     <p class="type-body-md mb-4">
-                                        At Rena’s Veggies, we believe good food and good music go hand in hand—and DJ A.Y brought both to life at our community market events. 
+                                        At Rena’s Veggies, we believe good food and good music go hand in hand—and DJ A.Y brought both to life at our community market events.
                                         His sets were vibrant, inviting, and perfectly tuned to our crowd. Families lingered longer, energy stayed high, and the whole space felt alive.
                                         He’s not just spinning tracks—he’s cultivating atmosphere. We can’t wait to have him back.”</p>
                                     <p class="type-body-md mb-4">

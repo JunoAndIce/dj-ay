@@ -143,6 +143,33 @@ nav.navbar {
 
 }
 
+.type-body-md-special {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  font-size: 0.75rem;
+  line-height: calc(1 / 0.75);
+
+}
+
+@media (min-width: 75rem) {
+  .type-body-md-special {
+    font-size: 1.25rem;
+    line-height: calc(1.75 / 1.25);
+
+  }
+}
+
+
+.type-body-sm2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  font-size: 0.75rem;
+  line-height: calc(1 / 0.75);
+
+}
+
 .bg-divider-primary {
   background-color: rgba(var(--color-divider-primary));
 }
@@ -167,6 +194,20 @@ nav.navbar {
   }
 }
 
+@media (min-width: 75rem) {
+  .container-padding {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .container-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .container-padding {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -180,40 +221,40 @@ footer.footer {
 /* ! HOVER EFFECTS  */
 .fa-youtube:hover {
   color: rgb(255, 0, 0);
-  transition: filter 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .fa-x-twitter:hover {
   color: rgb(29, 161, 242);
+  transition: color 0.3s ease;
 }
 
 .fa-soundcloud:hover {
   color: rgb(255, 85, 0);
-  transition: filter 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .fa-instagram:hover {
   color: rgb(225, 48, 108);
-  transition: filter 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .fa-linkedin:hover {
   color: rgb(0, 119, 181);
-  transition: filter 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .fa-envelope:hover {
   color: rgb(244, 180, 0);
-  transition: filter 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .fa-github:hover {
   color: rgb(45, 186, 78);
-  transition: filter 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .fa-tiktok:hover {
-  filter: drop-shadow(0.06em 0.03em 0 rgba(255, 0, 80, 0.75))
-          drop-shadow(-0.055em -0.05em 0 rgba(0, 242, 234, 0.75));
+  filter: drop-shadow(0.06em 0.03em 0 rgba(255, 0, 80, 0.75)) drop-shadow(-0.055em -0.05em 0 rgba(0, 242, 234, 0.75));
   transition: filter 0.3s ease;
 }

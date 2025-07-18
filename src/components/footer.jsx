@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faSoundcloud, faTiktok, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import HeroWebp from '../assets/images/hero.webp'
-import logo from '../assets/images/logo.webp'
+import logoW from '../assets/images/bazaartw.webp'
+import { Link } from 'react-router-dom';
 
 
 const TreeIcon = () => (
@@ -29,9 +30,9 @@ const Footer = () => {
             <footer class="color-bg-transition z-20 flex flex-col items-start justify-end self-stretch px-layout-responsive-spacing-outer-margin-lg pt-layout-responsive-spacing-outer-margin-lg bg-background-surface border-t border-divider-primary bg-background-surface">
                 <div className='flex flex-col '>
                     <div className='flex justify-between items-center'>
-                        <div className=''>
-                            <img className='!h-8' src={logo} />
-                        </div>
+                        <Link className='' to={"/"}>
+                            <img className='!h-8' src={logoW} />
+                        </Link>
                         <div className='flex gap-10 items-center '>
                             <a className='!text-white fa-tiktok' href='https://www.tiktok.com/@dja.y_?_t=ZP-8xQR8EEOyHn&_r=1'><FontAwesomeIcon icon={faTiktok} size="xl" /></a>
                             <a className='!text-white hidden md:block fa-x-twitter' href='https://x.com/Ayo_Akin25'><FontAwesomeIcon icon={faXTwitter} size="xl" /></a>

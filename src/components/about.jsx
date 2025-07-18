@@ -7,7 +7,7 @@ import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 import { ScrollTrigger } from 'gsap/all';
 import { Link } from 'react-router-dom';
 import party from '../assets/images/party.webp'
-import festival from '../assets/images/festival.webp'
+import festival from '../assets/images/ay-09.webp'
 import clubs from '../assets/images/Clubs.webp'
 
 

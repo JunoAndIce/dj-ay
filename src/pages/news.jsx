@@ -5,9 +5,7 @@ import Hero from '../components/hero';
 import Navbar from "../components/navbar";
 import About from "../components/about";
 import Menu from '../components/menu'
-import Bio from '../components/bio';
 import Footer from '../components/footer';
-import Social from '../components/social';
 import Blog from '../components/blog';
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // import 'bulma/css/bulma.css'
@@ -24,7 +22,6 @@ const News = () => {
                     <Navbar />
                     <Menu />
                     <Blog />
-                    <Social />
                     <Footer />
                 </div>
             </MenuProvider>
