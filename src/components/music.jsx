@@ -23,7 +23,7 @@ const Music = () => {
 
                             <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/Tae95nkZj_o'>
                                 <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src={mix1} />
+                                    <img className='!h-full w-full rounded-md object-cover' src={mix1} alt='Thumbnail of Afrobeats vs Dancehall mix.'/>
 
                                 </div>
                                 <p className="type-emphasis-lg">Afrobeats vs Dancehall Mix</p>
@@ -32,7 +32,7 @@ const Music = () => {
 
                             <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/U7MXgvYQ2h0'>
                                 <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src={mix2} />
+                                    <img className='!h-full w-full rounded-md object-cover' src={mix2} alt='Thumbnail of DJ A.Y Versatile mix.'/>
 
                                 </div>
                                 <p className="type-emphasis-lg">DJ A.Y VERSATILE </p>

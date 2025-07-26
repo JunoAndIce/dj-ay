@@ -1,5 +1,5 @@
 
-import { useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { MenuProvider } from '../context/menuProvider'; // adjust path if needed
 import Hero from '../components/hero';
 import Navbar from "../components/navbar";
@@ -11,6 +11,10 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // import 'bulma/css/bulma.css'
 
 const News = () => {
+    
+    useEffect(() => {
+            document.title = "DJ A.Y Official | News"
+        }, []);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)

@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { MenuProvider } from "../context/menuProvider"; // adjust path if needed
 import Hero from '../components/hero';
 import Navbar from "../components/navbar";
@@ -14,6 +14,9 @@ const Home = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
+    useEffect(() => {
+            document.title = "DJ A.Y Official | Home"
+        }, []);
     return (
         <>
             <MenuProvider>

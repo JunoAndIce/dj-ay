@@ -1,5 +1,5 @@
 import React from 'react';
-import { createHashRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import routes from '../routes/routes';
 
 const Layout = () => (
@@ -8,9 +8,9 @@ const Layout = () => (
   </main>
 );
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/dj-ay',
     element: <Layout />,
     children: routes,
   },

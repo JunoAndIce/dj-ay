@@ -39,7 +39,7 @@ const Hero = () => {
                             <span className="icon">
                                 <FontAwesomeIcon icon={faMusic} />
                             </span>
-                            <Link to='/mixes' className='!text-white'>View Music</Link>
+                            <Link to='/dj-ay/mixes' className='!text-white'>View Music</Link>
                         </a>
                     </div>
 

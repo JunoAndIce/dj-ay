@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { MenuProvider } from "../context/menuProvider"; // adjust path if needed
 import Hero from '../components/hero';
 import Navbar from "../components/navbar";
@@ -12,6 +12,12 @@ import HeroPC from '../components/hero_pc';
 import MusicPC from '../components/music_pc';
 
 const Mixes = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+    useEffect(() => {
+            document.title = "DJ A.Y Official | Mixes"
+        }, []);
     return (
         <>
             <MenuProvider>
