@@ -9,23 +9,17 @@ import Footer from "../components/footer";
 import Social from "../components/social";
 import Testimonials from '../components/testimonial';
 import HeroPC from '../components/hero_pc';
+import MusicPC from '../components/music_pc';
 
-const Home = () => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
+const Mixes = () => {
     return (
         <>
             <MenuProvider>
                 <div id="webApp">
                     <Navbar />
                     <Menu />
-                    <Hero />
-                    <HeroPC />
-                    <About />
-                    <Testimonials />
+                    <MusicPC />
                     <Music />
-                    {/* <Social /> */}
                     <Footer />
                 </div>
             </MenuProvider>
@@ -34,4 +28,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Mixes;

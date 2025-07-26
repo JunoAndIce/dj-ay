@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useMenu } from '../context/menuProvider';
 import Hamburger from 'hamburger-react';
-import logo from '../assets/images/logo.webp'
+import logo from '../assets/images/bazaart.webp'
 
 const Navbar = () => {
   const { isMenuOpen, toggleMenu } = useMenu();

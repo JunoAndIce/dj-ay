@@ -55,9 +55,8 @@ const Menu = () => {
         <Link to='/'><li>Home</li></Link>
         <Link to='/about-me'><li>About Me</li></Link>
         <Link to='/news'><li>News</li></Link>
-        <a><li>Tours</li></a>
-        <a><li>My Music</li></a>
-        <a><li>Book</li></a>
+        <Link to='/mixes'><li>My Mixes</li></Link>
+        <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'}><li>Book</li></Link>
       </ul>
     </aside>
   );

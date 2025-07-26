@@ -3,17 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import HeroWebp from '../assets/images/hero.webp'
 import logo from '../assets/images/logo.webp'
+import { Link } from 'react-router-dom';
 const Hero = () => {
 
     const divStyle = {
         backgroundImage: 'url(' + HeroWebp + ')',
         backgroundSize: 'cover',       // ensures the image covers the container
-        backgroundPosition: 'center',  // centers the image
-        backgroundRepeat: 'no-repeat', // prevents tiling
+        backgroundPosition: '50% 20%',  // centers the image
+        backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
     };
     return (
         <>
-            <section className='hero is-fullheight relative'>
+            <section className='hero is-fullheight relative is-hidden-tablet'>
                 <div className="hero-body" style={divStyle}>
                 </div>
                 <div className='flex flex-col items-center gap-8 text-center h-[50%] p-12 bg-black/95 absolute bottom-0 w-full'>
@@ -32,13 +33,13 @@ const Hero = () => {
                             <span className="icon">
                                 <FontAwesomeIcon icon={faClipboard} />
                             </span>
-                            <button className=''>Book Now</button>
+                            <Link className='!text-white' onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'}>Book Now</Link>
                         </a>
                         <a className=' button is-small is-fullwidth'>
                             <span className="icon">
                                 <FontAwesomeIcon icon={faMusic} />
                             </span>
-                            <button className=''>View Music</button>
+                            <Link to='/mixes' className='!text-white'>View Music</Link>
                         </a>
                     </div>
 

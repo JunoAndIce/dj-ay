@@ -8,7 +8,7 @@ import mix2 from '../assets/images/mix2.webp'
 const Music = () => {
     return (
         <>
-            <section className='section mb-20'>
+            <section className='section mb-20 is-hidden-tablet mt-15'>
 
                 <div className='md:px-15 lg:px-35'>
                     <div className=''>

@@ -7,9 +7,7 @@ import About from "../components/about";
 import Menu from '../components/menu'
 import Bio from '../components/bio';
 import Footer from '../components/footer';
-import Social from '../components/social';
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-// import 'bulma/css/bulma.css'
 
 const AboutMe = () => {
     useLayoutEffect(() => {
@@ -22,7 +20,6 @@ const AboutMe = () => {
                     <Navbar />
                     <Menu />
                     <Bio />
-                    {/* <Social /> */}
                     <Footer />
                 </div>
             </MenuProvider>

@@ -27,7 +27,7 @@ const TreeIcon = () => (
 const Footer = () => {
     return (
         <>
-            <footer class="color-bg-transition z-20 flex flex-col items-start justify-end self-stretch px-layout-responsive-spacing-outer-margin-lg pt-layout-responsive-spacing-outer-margin-lg bg-background-surface border-t border-divider-primary bg-background-surface">
+            <footer className="color-bg-transition z-20 flex flex-col items-start justify-end self-stretch px-layout-responsive-spacing-outer-margin-lg pt-layout-responsive-spacing-outer-margin-lg bg-background-surface border-t border-divider-primary bg-background-surface">
                 <div className='flex flex-col '>
                     <div className='flex justify-between items-center'>
                         <Link className='' to={"/"}>
@@ -50,7 +50,7 @@ const Footer = () => {
                             <a className='!underline'>License</a>
                         </div>
                         <div className="ml-2 flex items-center justify-center pt-6">
-                            <p>
+                            <p className='text-white text-xs'>
                                 <a href="https://github.com/JunoAndIce">  © 2025 Juno / Ediubong Ekwere</a>
                             </p>
 
