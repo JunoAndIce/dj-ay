@@ -30,7 +30,7 @@ const HeroPC = () => {
                     {/* Foreground Content */}
                     <div className="flex flex-col gap-8 p-12 absolute bottom-20 left-20 z-20">
                         <div>
-                            <img className="w-250" src={logo} alt="DJ A.Y Main Logo" />
+                            <img className="w-250" src={logo} alt="DJ A.Y. Main Logo" />
                         </div>
 
                         <div>

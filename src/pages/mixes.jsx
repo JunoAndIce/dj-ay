@@ -16,7 +16,7 @@ const Mixes = () => {
         window.scrollTo(0, 0)
     });
     useEffect(() => {
-            document.title = "DJ A.Y Official | Mixes"
+            document.title = "DJ A.Y. Official | Mixes"
         }, []);
     return (
         <>

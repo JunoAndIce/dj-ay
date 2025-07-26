@@ -19,7 +19,7 @@ const Hero = () => {
                 </div>
                 <div className='flex flex-col items-center gap-8 text-center h-[50%] p-12 bg-black/95 absolute bottom-0 w-full'>
                     <div className=''>
-                        <img className='' src={logo} alt='DJ A.Y Main Logo'></img>
+                        <img className='' src={logo} alt='DJ A.Y. Main Logo'></img>
                     </div>
 
                     <div className=''>

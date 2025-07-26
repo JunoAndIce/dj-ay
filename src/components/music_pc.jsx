@@ -43,11 +43,11 @@ const MusicPC = () => {
                     <img alt="Lucky Zhang" loading="lazy" width="1224" height="1224" decoding="async" data-nimg="1" className="h-full w-full rounded-lg object-cover" src={Mix2} style={{ color: 'transparent' }} />
                 </Link>
                 <div className="flex flex-col gap-3 sm:flex-1">
-                    <a className="type-headline-sm" href='https://youtu.be/U7MXgvYQ2h0'>DJ A.Y VERSATILE JAIYE ROOM MIX</a>
+                    <a className="type-headline-sm" href='https://youtu.be/U7MXgvYQ2h0'>DJ A.Y. VERSATILE JAIYE ROOM MIX</a>
                     <div className="type-body-md max-w-[600px]">
                         <div className="rich-text">
                             <p className="type-body-md mb-4">
-                                DJ A.Y MISSION WAS TO GET EVERYONE OFF THE WALL AND TO THE DANCE FLOOR AND HE DID JUST THAT! I DONT OWN THE RIGHTS TO THE MUSIC
+                                DJ A.Y. MISSION WAS TO GET EVERYONE OFF THE WALL AND TO THE DANCE FLOOR AND HE DID JUST THAT!
                             </p>
                             <p className="type-body-md mb-4">
                                 <strong className="font-bold"><br />

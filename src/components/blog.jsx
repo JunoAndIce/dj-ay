@@ -12,7 +12,7 @@ const Blog = () => {
     <section className="section">
       <div className='mt-10'>
         <p className='md:text-[3rem] text-[3rem] font-extrabold'>NEWS</p>
-        <p className='subtitle is-6 type-body-sm'>Keep up with DJ A.Y</p>
+        <p className='subtitle is-6 type-body-sm'>Keep up with DJ A.Y.</p>
         <div className="h-[1px] w-full bg-divider-primary"></div>
       </div>
       {!selectedPost ? (

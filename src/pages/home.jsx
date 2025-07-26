@@ -15,7 +15,7 @@ const Home = () => {
         window.scrollTo(0, 0)
     });
     useEffect(() => {
-            document.title = "DJ A.Y Official | Home"
+            document.title = "DJ A.Y. Official | Home"
         }, []);
     return (
         <>

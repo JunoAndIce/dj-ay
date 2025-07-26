@@ -29,7 +29,7 @@ const Testimonials = () => {
                                     <img className='' src={Norsu} />
                                 </figure>
                                 <div className=''>
-                                    <p className="type-body-md-special text-white mb-4">From our very first pop-up, DJ A.Y understood what Norsu stands for—bold presence,
+                                    <p className="type-body-md-special text-white mb-4">From our very first pop-up, DJ A.Y. understood what Norsu stands for—bold presence,
                                         creative flow, and unapologetic style. His sound elevated our spaces, turned casual shoppers into loyal fans,
                                         and made every event feel like a movement. There’s a reason we keep bringing him back:
                                         he doesn’t just play music—he builds moments that people remember.</p>
@@ -55,12 +55,12 @@ const Testimonials = () => {
                                 <div className="rich-text">
                                     <p className="type-body-md mb-4">
                                         At Hwy 6 Studios, we collaborate with artists who bring something rare to the table—vision, versatility, and velocity.
-                                        DJ A.Y doesn’t just bring the energy—he is the energy.
+                                        DJ A.Y. doesn’t just bring the energy—he is the energy.
                                         Whether we’re producing a late-night shoot, curating a sound for a high-concept campaign,
-                                        or building an immersive live experience, DJ A.Y consistently delivers soundscapes that elevate the moment and leave a lasting impression.
+                                        or building an immersive live experience, DJ A.Y. consistently delivers soundscapes that elevate the moment and leave a lasting impression.
                                         His ability to read the room, blend genres seamlessly, and hype a crowd with both precision and passion is unmatched.
                                         We’ve watched him turn ideas into anthems and venues into unforgettable memories.
-                                        DJ A.Y isn’t just part of the culture—he pushes it forward.”</p>
+                                        DJ A.Y. isn’t just part of the culture—he pushes it forward.”</p>
                                     <p className="type-body-md mb-4">
                                         <strong className="font-bold">HWY  6 Studios<br />Creative Direction Team
                                             <a className="underline" href="https://www.hwy6studios.com" target="_blank" rel="noopener noreferrer">
@@ -77,15 +77,15 @@ const Testimonials = () => {
                             <img alt="Lucky Zhang" loading="lazy" width="1224" height="1224" decoding="async" data-nimg="1" className="h-full w-full rounded-lg object-cover" src={Apparel} style={{ color: 'transparent' }} />
                         </div>
                         <div className="flex flex-col gap-3 sm:flex-1">
-                            <p className="type-headline-sm ">“DJ A.Y sets the tone—every time.</p>
+                            <p className="type-headline-sm ">“DJ A.Y. sets the tone—every time.</p>
                             <div className="type-body-md max-w-[600px]">
                                 <div className="rich-text">
                                     <p className="type-body-md mb-4">When we host an event, it’s more than just a gathering—it’s a statement.
-                                        DJ A.Y understood that immediately. His ability to read the room, adapt on the fly,
+                                        DJ A.Y. understood that immediately. His ability to read the room, adapt on the fly,
                                         and keep the energy elevated from start to finish was exactly what we needed.
                                         Whether it was a runway show or a private launch, he delivered with precision,
                                         style, and an unmistakable vibe that matched our brand perfectly.
-                                        DJ A.Y isn’t just a DJ—he’s a creative partner who brings the experience to life.</p>
+                                        DJ A.Y. isn’t just a DJ—he’s a creative partner who brings the experience to life.</p>
                                     <p className="type-body-md mb-4">
                                         <strong className="font-bold">Special Apparel Needs<br />Non-Profit Donation Group
                                             <a className="underline" href="https://www.hwy6studios.com" target="_blank" rel="noopener noreferrer">

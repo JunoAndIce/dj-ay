@@ -1,6 +1,6 @@
 import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faSoundcloud, faTiktok, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faInstagram, faSoundcloud, faSpotify, faTiktok, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import HeroWebp from '../assets/images/hero.webp'
 import logoW from '../assets/images/bazaartw.webp'
@@ -38,6 +38,8 @@ const Footer = () => {
                             <a className='!text-white hidden md:block fa-x-twitter' href='https://x.com/Ayo_Akin25'><FontAwesomeIcon icon={faXTwitter} size="xl" /></a>
                             <a className='!text-white fa-instagram' href='https://www.instagram.com/dja.y_?igsh=NGJlYjN2MGNzODBj&utm_source=qr'><FontAwesomeIcon icon={faInstagram} size="xl" /></a>
                             <a className='!text-white hidden md:block fa-youtube' href='https://www.youtube.com/channel/UCQXICi84w_oL0syTdN4J-ng'><FontAwesomeIcon icon={faYoutube} size="xl" /></a>
+                            <a className='!text-white hidden md:block fa-apple' href='https://music.apple.com/us/artist/dj-a-y/1102499691'><FontAwesomeIcon icon={faApple} size="xl" /></a>
+                            <a className='!text-white hidden md:block fa-spotify' href='https://open.spotify.com/artist/5JWt6rXnRhaGhP16v71xxg?si=lmcrKlYESJy1lG2OTdZ93w'><FontAwesomeIcon icon={faSpotify} size="xl" /></a>
                             <a className='!text-white hidden md:block fa-soundcloud' href='https://on.soundcloud.com/z8Om6B2OWKwjyVITwb'><FontAwesomeIcon icon={faSoundcloud} size="xl" /></a>
                             <a className='!text-white group' href='https://linktr.ee/dja.yofficial'><TreeIcon /></a>
                         </div>

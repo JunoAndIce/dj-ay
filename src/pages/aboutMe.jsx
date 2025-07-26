@@ -15,7 +15,7 @@ const AboutMe = () => {
     });
 
     useEffect(() => {
-        document.title = "DJ A.Y Official | About Me"
+        document.title = "DJ A.Y. Official | About Me"
     }, []);
 
     return (

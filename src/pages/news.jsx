@@ -13,7 +13,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 const News = () => {
     
     useEffect(() => {
-            document.title = "DJ A.Y Official | News"
+            document.title = "DJ A.Y. Official | News"
         }, []);
 
     useLayoutEffect(() => {

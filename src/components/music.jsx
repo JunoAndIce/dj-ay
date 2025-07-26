@@ -32,10 +32,10 @@ const Music = () => {
 
                             <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/U7MXgvYQ2h0'>
                                 <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src={mix2} alt='Thumbnail of DJ A.Y Versatile mix.'/>
+                                    <img className='!h-full w-full rounded-md object-cover' src={mix2} alt='Thumbnail of DJ A.Y. Versatile mix.'/>
 
                                 </div>
-                                <p className="type-emphasis-lg">DJ A.Y VERSATILE </p>
+                                <p className="type-emphasis-lg">DJ A.Y. VERSATILE </p>
                                 <p className="type-body-sm">Jaiye Room Mix</p>
                             </a>
 

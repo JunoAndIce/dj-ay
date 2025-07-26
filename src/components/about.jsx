@@ -38,7 +38,7 @@ const About = () => {
                         <div className='flex flex-col gap-10 mb-20'>
 
                             <div className='text-base '>
-                                <p className='text-xl font-extrabold md:text-5xl md:w-200 lg:w-250'> <span className='bg-gradient-to-r from-amber-500 to-red-400 bg-clip-text text-transparent'> Hailing from Houston, Texas: </span><br /> DJ A.Y is one of the most versatile and rising DJs in the Texas music scene, gaining recognition for his high-energy sets and seamless genre-blending — especially within Afrobeats. </p>
+                                <p className='text-xl font-extrabold md:text-5xl md:w-200 lg:w-250'> <span className='bg-gradient-to-r from-amber-500 to-red-400 bg-clip-text text-transparent'> Hailing from Houston, Texas: </span><br /> DJ A.Y. is one of the most versatile and rising DJs in the Texas music scene, gaining recognition for his high-energy sets and seamless genre-blending — especially within Afrobeats. </p>
                                 <div className='mt-4'>
                                     <Link className='p-2 button is-fullwidth is-small is-warning is-outlined mt-5' to='/dj-ay/about-me'>
                                         Read More
@@ -57,7 +57,7 @@ const About = () => {
                             <div className='card_ctn mt-5 flex flex-col md:flex-row justify-center items-center gap-6 md:p-40'>
                                 <div className='text-black flex aspect-2/3 h-full w-full flex-col justify-end rounded-xl bg-background-surface px-6 pb-11 relative min-h-[320px] overflow-hidden'>
                                     <div className='absolute inset-0 h-full w-full'>
-                                        <img className='card_img h-full w-full object-cover absolute ' src={party} alt='DJ A.Y at a party setting.' />
+                                        <img className='card_img h-full w-full object-cover absolute ' src={party} alt='DJ A.Y. at a party setting.' />
                                     </div>
                                     <div className="card_bg absolute bottom-0 left-0 right-0 h-1/2"></div>
                                     <div className="flex h-full w-full items-center justify-center"><div className="flex h-full w-full items-center justify-center p-10"></div></div>
@@ -70,7 +70,7 @@ const About = () => {
 
                                 <div className='text-black flex aspect-2/3 h-full w-full flex-col justify-end rounded-xl bg-background-surface px-6 pb-11 relative min-h-[320px] overflow-hidden'>
                                     <div className='absolute inset-0 h-full w-full'>
-                                        <img className='card_img h-full w-full object-cover absolute ' src={clubs} alt='DJ A.Y at a club setting.'/>
+                                        <img className='card_img h-full w-full object-cover absolute ' src={clubs} alt='DJ A.Y. at a club setting.'/>
                                     </div>
                                     <div className="card_bg absolute bottom-0 left-0 right-0 h-1/2"></div>
                                     <div className="flex h-full w-full items-center justify-center"><div className="flex h-full w-full items-center justify-center p-10"></div></div>
@@ -83,7 +83,7 @@ const About = () => {
 
                                 <div className='text-black flex aspect-2/3 h-full w-full flex-col justify-end rounded-xl bg-background-surface px-6 pb-11 relative min-h-[320px] overflow-hidden'>
                                     <div className='absolute inset-0 h-full w-full'>
-                                        <img className='card_img h-full w-full object-cover absolute ' src={festival} alt='DJ A.Y at a festival setting.' />
+                                        <img className='card_img h-full w-full object-cover absolute ' src={festival} alt='DJ A.Y. at a festival setting.' />
                                     </div>
                                     <div className="card_bg absolute bottom-0 left-0 right-0 h-1/2"></div>
                                     <div className="flex h-full w-full items-center justify-center"><div className="flex h-full w-full items-center justify-center p-10"></div></div>

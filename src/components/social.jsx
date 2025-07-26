@@ -12,7 +12,7 @@ const Social = () => {
             <footer className='section'>
                 <div className='container text-center '>
                     <div>
-                        <h1 className='title is-6'>FOLLOW DJ A.Y</h1>
+                        <h1 className='title is-6'>FOLLOW DJ A.Y.</h1>
                         <div className="h-[1px] w-full bg-divider-primary"></div>
 
                     </div>

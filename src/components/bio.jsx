@@ -34,15 +34,15 @@ const Bio = () => {
                 <div className='container'>
                     <div className='is-primary'>
                         <p>
-                            <strong>Hailing from Houston, Texas,</strong> DJ A.Y is one of the most versatile and rising DJs in the Texas music scene,
+                            <strong>Hailing from Houston, Texas,</strong> DJ A.Y. is one of the most versatile and rising DJs in the Texas music scene,
                             gaining recognition for his high-energy sets and seamless genre-blending—especially within Afrobeats.
-                            Inspired by his DJ friends and the energy they brought to every crowd, <strong>DJ A.Y began his journey on May 8, 2022, </strong>
+                            Inspired by his DJ friends and the energy they brought to every crowd, <strong>DJ A.Y. began his journey on May 8, 2022, </strong>
                             and has since taken stages across Texas by storm.
                         </p>
 
                         <p className='mt-5'>
                             As a proud student of Texas State University
-                            and winner of the Performing Artist of the Year award, DJ A.Y has become a household name among college audiences,
+                            and winner of the Performing Artist of the Year award, DJ A.Y. has become a household name among college audiences,
                             igniting dance floors in cities like <strong>Houston, San Marcos, Austin, San Antonio, Dallas, Lubbock, and College Station. </strong>
                             His resume includes performances alongside some of Afrobeats’ biggest stars,
                             including <strong>Davido, Ruger, Adekunle Gold, Victony, DJ Tunez, Bnxn, Oxlade, Mayorkun, Spinall, Shallipopi, and Odumodublvck. </strong>
@@ -50,7 +50,7 @@ const Bio = () => {
 
                         <p className='mt-5'>
                             Now featured in Collective Club’s Exclusive Guest Selections,
-                            DJ A.Y continues to share the sounds that fuel his creativity and shape his electrifying performances.
+                            DJ A.Y. continues to share the sounds that fuel his creativity and shape his electrifying performances.
                             Driven by passion and purpose, <strong>his mission is simple: to connect, inspire, and create unforgettable experiences—one crowd at a time.</strong>
                         </p>
 
