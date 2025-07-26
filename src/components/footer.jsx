@@ -30,7 +30,7 @@ const Footer = () => {
             <footer className="color-bg-transition z-20 flex flex-col items-start justify-end self-stretch px-layout-responsive-spacing-outer-margin-lg pt-layout-responsive-spacing-outer-margin-lg bg-background-surface border-t border-divider-primary bg-background-surface">
                 <div className='flex flex-col '>
                     <div className='flex justify-between items-center'>
-                        <Link className='' to={"/"}>
+                        <Link className='' to='/dj-ay'>
                             <img className='!h-8' src={logoW} />
                         </Link>
                         <div className='flex gap-10 items-center '>
