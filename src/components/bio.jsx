@@ -11,6 +11,7 @@ import stand from '../assets/images/stand.webp'
 import festival from '../assets/images/festival.webp'
 import action from '../assets/images/action.webp'
 import clubs from '../assets/images/Clubs.webp'
+import { Link } from 'react-router-dom';
 
 const Bio = () => {
 
@@ -59,7 +60,7 @@ const Bio = () => {
                             <span className="icon">
                                 <FontAwesomeIcon icon={faClipboard} />
                             </span>
-                            <button className=''>Let's Start Working!</button>
+                            <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'} className='!text-black'>Let's start working!</Link>
                         </a>
                     </div>
 

@@ -18,7 +18,7 @@ const routes = [
     element: <News />,
   },
   {
-    path: 'mixes',
+    path: 'music',
     element: <Mixes />,
   },
   // {
