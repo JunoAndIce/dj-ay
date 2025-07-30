@@ -14,7 +14,7 @@ const Mixes = () => {
 
     return (
         <section className='section'>
-            <div className='mt-12'>
+            <div className='mt-5'>
                 <p className='md:text-[3rem] text-xl font-extrabold mb-3 '>MIXES</p>
                 <div className="h-[1px] w-full bg-divider-primary"></div>
                 {/* <p className=''>ANYWHERE</p> */}

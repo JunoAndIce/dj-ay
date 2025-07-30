@@ -10,7 +10,8 @@ const Hero = () => {
         backgroundImage: 'url(' + HeroWebp + ')',
         backgroundSize: 'cover',       // ensures the image covers the container
         backgroundPosition: '50% 20%',  // centers the image
-        backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
+        backgroundRepeat: 'no-repeat', // prevents tiling 
+        filter: 'grayscale(100%)' // applies grayscale filter
     };
     return (
         <>
@@ -20,6 +21,7 @@ const Hero = () => {
                 <div className='flex flex-col items-center gap-8 text-center h-[50%] p-12 bg-black/95 absolute bottom-0 w-full'>
                     <div className=''>
                         <img className='' src={logo} alt='DJ A.Y. Main Logo'></img>
+                        {/* <p className='md:text-[3rem] text-xl font-extrabold mb-5'>AYO</p> */}
                     </div>
 
                     <div className=''>
