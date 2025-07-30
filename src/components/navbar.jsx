@@ -50,7 +50,7 @@ const Navbar = () => {
               alt='Logo'
             />
           </Link>
-          <div class="navbar-start is-hidden-touch px-4 text-lg ">
+          <div class="navbar-start is-hidden-touch px-4">
             <Link to='/dj-ay'><a className='navbar-item ml-5'>Home</a></Link>
             <Link to='/dj-ay/about-me'><a className='navbar-item ml-5'>About Me</a></Link>
             <Link to='/dj-ay/news'><a className='navbar-item ml-5'>News</a></Link>
