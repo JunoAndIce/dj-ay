@@ -1,7 +1,7 @@
 import Home from '../pages/home';
 import AboutMe from '../pages/aboutMe';
 import News from '../pages/news';
-import Mixes from '../pages/mixes';
+import MyMusic from '../pages/myMusic';
 // import Contact from '../pages/contact'; // Add if needed
 
 const routes = [
@@ -18,8 +18,8 @@ const routes = [
     element: <News />,
   },
   {
-    path: 'music',
-    element: <Mixes />,
+    path: 'my-music',
+    element: <MyMusic />,
   },
   // {
   //   path: '/contact',

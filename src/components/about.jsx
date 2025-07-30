@@ -26,12 +26,13 @@ const About = () => {
     //         }
     //     });
     // }, []);
+    
 
     return (
         <>
             <section className='section'>
 
-                <div className='mt-5 md:px-15 lg:px-35'>
+                <div className='mt-5 md:px-15 lg:px-15'>
                     <div className=''>
 
 
@@ -54,7 +55,7 @@ const About = () => {
                                 <div className="h-[1px] w-full bg-divider-primary"></div>
                                 {/* <p className=''>ANYWHERE</p> */}
                             </div>
-                            <div className='card_ctn mt-5 flex flex-col md:flex-row justify-center items-center gap-6 md:p-40'>
+                            <div className='card_ctn mt-5 flex flex-col md:flex-row justify-center items-center gap-6'>
                                 <div className='text-black flex aspect-2/3 h-full w-full flex-col justify-end rounded-xl bg-background-surface px-6 pb-11 relative min-h-[320px] overflow-hidden'>
                                     <div className='absolute inset-0 h-full w-full'>
                                         <img className='card_img h-full w-full object-cover absolute ' src={party} alt='DJ A.Y. at a party setting.' />

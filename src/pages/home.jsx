@@ -9,6 +9,7 @@ import Footer from "../components/footer";
 import Social from "../components/social";
 import Testimonials from '../components/testimonial';
 import HeroPC from '../components/hero_pc';
+import Mixes from '../components/mixes';
 
 const Home = () => {
     useLayoutEffect(() => {
@@ -28,7 +29,7 @@ const Home = () => {
                     <About />
                     <Testimonials />
                     <Music />
-                    {/* <Social /> */}
+                    <Mixes />
                     <Footer />
                 </div>
             </MenuProvider>

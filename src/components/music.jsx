@@ -1,62 +1,106 @@
-import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
+
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClipboard } from '@fortawesome/free-regular-svg-icons';
-import HeroWebp from '../assets/images/hero.webp'
-import mix1 from '../assets/images/mix1.webp'
-import mix2 from '../assets/images/mix2.webp'
+import { faApple, faSpotify } from '@fortawesome/free-brands-svg-icons';
+import Mix1 from '../assets/images/IMG_9211.webp'
+import Mix2 from '../assets/images/mix2.webp'
+import festival from '../assets/images/Festival.webp'
+import SpotifyT from '../assets/images/spotifyw.png'
+import Apple from '../assets/images/apple-w.png'
+
 
 const Music = () => {
+    
+    const divStyle = {
+            backgroundImage: 'url(' + Mix1 + ')',
+            backgroundSize: 'cover',       // ensures the image covers the container
+            backgroundPosition: '50% 55%',  // centers the image
+            backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
+    };
+
     return (
-        <>
-            <section className='section mb-20 is-hidden-tablet mt-15'>
+        <section className='section'>
+            <div className='mt-20'>
+                <p className='md:text-[3rem] text-xl font-extrabold mb-2'>MY MUSIC</p>
+                <div className="h-[1px] w-full bg-divider-primary"></div>
+                {/* <p className=''>ANYWHERE</p> */}
+            </div>
+            <div className="flex w-full flex-col gap-8 rounded-lg mt-5">
+                {/* <p className="type-headline-sm" href='https://youtu.be/Tae95nkZj_o'>DJ A.Y. | CRAZE INTERLUDE</p> */}
 
-                <div className='md:px-15 lg:px-35'>
-                    <div className=''>
-                        <p className='md:text-[3rem] text-xl font-extrabold mb-5'>MY MUSIC</p>
-                        {/* <div className="h-[1px] w-full bg-divider-primary"></div> */}
-                        {/* <p className=''>ANYWHERE</p> */}
-                    </div>
 
-                    <div className="flex w-full flex-col gap-8 rounded-lg mt-5 border-t border-divider-primary !p-5">
-                        <p className="type-emphasis-lg" href='https://youtu.be/Tae95nkZj_o'>DJ A.Y. | CRAZE INTERLUDE</p>
-                        <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/1O2fGCZ87j0G2gcrtYj9BK?utm_source=generator&theme=0" width="100%" height="472" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="338" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/craze-interlude-ep/1764941995"></iframe>
-                        {/* <Spotify link='https://open.spotify.com/album/1O2fGCZ87j0G2gcrtYj9BK?si=DKnDJyw-SVOKSPfA_MBqPQ' /> */}
-                    </div>
-                    <div className='m-auto fixed-grid has-5-cols-tablet has-1-cols-mobile overflow-hidden'>
-                        <div className='mt-12'>
-                            <p className='md:text-[3rem] text-xl font-extrabold mb-3 '>MIXES</p>
-                            <div className="h-[1px] w-full bg-divider-primary"></div>
-                            {/* <p className=''>ANYWHERE</p> */}
-                        </div>
-                        <div className='grid is-gap-5 mt-5'>
+                <div className='flex flex-col gap-5'>
+                    <div className="relative">
 
-                            <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/Tae95nkZj_o'>
-                                <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src={mix1} alt='Thumbnail of Afrobeats vs Dancehall mix.' />
-
-                                </div>
-                                <p className="type-emphasis-lg">Afrobeats vs Dancehall Mix</p>
-                                <p className="type-body-sm">True Colors: Houston</p>
-                            </a>
-
-                            <a className='flex flex-col cell cursor-pointer' href='https://youtu.be/U7MXgvYQ2h0'>
-                                <div className='mb-2 aspect-3/2'>
-                                    <img className='!h-full w-full rounded-md object-cover' src={mix2} alt='Thumbnail of DJ A.Y. Versatile mix.' />
-
-                                </div>
-                                <p className="type-emphasis-lg">DJ A.Y. VERSATILE </p>
-                                <p className="type-body-sm">Jaiye Room Mix</p>
-                            </a>
-
+                        <div className='brightness-35 h-125 md:h-250' style={divStyle}>
                         </div>
 
-                    </div>
+                        <div className='absolute bottom-3 left-0 px-3 '>
+                            <div className='flex flex-col md:w-200 md:p-20 gap-2'>
+                                <div className='flex flex-col items-center'>
 
+                                    <figure className='image is-hidden-mobile'>
+                                        <img className='' src={SpotifyT} />
+                                    </figure>
+                                    <figure className='image is-hidden-tablet'>
+                                        <img className='!h-10' src={SpotifyT} />
+                                    </figure>
+
+                                
+                                    <div className='font-extrabold text-7xl is-hidden-mobile'>
+                                        X
+                                    </div>
+                                    <div className='font-extrabold text-3xl is-hidden-tablet'>
+                                        X
+                                    </div>
+
+                                    <figure className='image is-hidden-mobile'>
+                                        <img className='' src={Apple} />
+                                    </figure>
+                                    <figure className='image is-hidden-tablet'>
+                                        <img className='!h-10' src={Apple} />
+                                    </figure>
+
+                                </div>
+                                <div className='mt-3'>
+                                    <p className="type-body-md-special text-white mb-4">Experience DJ A.Y’s electrifying Afro‑Rhythm Universe on Spotify: dynamic, high‑energy mixes that pulse with the heart of Afrobeat. His playlists weave together chart‑toppers from stars like Burna Boy, Wizkid, and Omah Lay with fresh underground tunes and deeper cuts. Whether it’s mid-tempo grooves or bass‑driven Nigerians club classics, DJ A.Y curates a seamless journey through the sounds dominating dancefloors across Africa and the diaspora.</p>
+                                    <div className='mt-10 buttons field is-grouped is-hidden-mobile'>
+                                        <a className='button is-large is-halfwidth'>
+                                            <span className="icon">
+                                                <FontAwesomeIcon icon={faSpotify} />
+                                            </span>
+                                            <Link className='!text-white' to='https://open.spotify.com/artist/5JWt6rXnRhaGhP16v71xxg?si=8s7lfRo6SxCEthQ0aGMsPw'>View on Spotify</Link>
+                                        </a>
+                                        <a className=' button is-large is-halfwidth'>
+                                            <span className="icon">
+                                                <FontAwesomeIcon icon={faApple} />
+                                            </span>
+                                            <Link to='https://music.apple.com/us/artist/dj-a-y/1102499691' className='!text-white'>View on Apple Music</Link>
+                                        </a>
+                                    </div>
+                                    <div className='mt-10 buttons field is-grouped is-hidden-tablet'>
+                                        <a className='button is-small is-halfwidth'>
+                                            <span className="icon">
+                                                <FontAwesomeIcon icon={faSpotify} />
+                                            </span>
+                                            <Link className='!text-white' to='https://open.spotify.com/artist/5JWt6rXnRhaGhP16v71xxg?si=8s7lfRo6SxCEthQ0aGMsPw'>View on Spotify</Link>
+                                        </a>
+                                        <a className=' button is-small is-halfwidth'>
+                                            <span className="icon">
+                                                <FontAwesomeIcon icon={faApple} />
+                                            </span>
+                                            <Link to='https://music.apple.com/us/artist/dj-a-y/1102499691' className='!text-white'>View on Apple Music</Link>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </section>
-        </>
-    )
-}
+            </div>
+        </section>
+    );
+};
 
 export default Music;

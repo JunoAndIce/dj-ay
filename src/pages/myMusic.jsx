@@ -4,14 +4,15 @@ import Hero from '../components/hero';
 import Navbar from "../components/navbar";
 import About from "../components/about";
 import Menu from "../components/menu";
-import Music from "../components/music";
+import OLDMUSIC from "../components/OLDMUSIC";
 import Footer from "../components/footer";
 import Social from "../components/social";
 import Testimonials from '../components/testimonial';
 import HeroPC from '../components/hero_pc';
-import MusicPC from '../components/music_pc';
+import Music from '../components/music';
+import Mixes from '../components/mixes';
 
-const Mixes = () => {
+const MyMusic = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
@@ -24,8 +25,8 @@ const Mixes = () => {
                 <div id="webApp">
                     <Navbar />
                     <Menu />
-                    <MusicPC />
                     <Music />
+                    <Mixes />
                     <Footer />
                 </div>
             </MenuProvider>
@@ -34,4 +35,4 @@ const Mixes = () => {
     );
 };
 
-export default Mixes;
+export default MyMusic;

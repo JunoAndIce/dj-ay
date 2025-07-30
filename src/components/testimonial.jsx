@@ -8,20 +8,23 @@ import RVeggies from '../assets/images/rveggies.webp'
 import festival from '../assets/images/Festival.webp'
 import Norsu from '../assets/images/norsu-logo.webp'
 const Testimonials = () => {
+
+    const divStyle = {
+                backgroundImage: 'url(' + festival + ')',
+                backgroundSize: 'cover',       // ensures the image covers the container
+                backgroundPosition: '50% 50%',  // centers the image
+                backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
+    };
     return (
         <>
             <section className='section'>
 
-                <div className='md:px-15 lg:px-35'>
+                <div className='md:px-10 lg:px-15'>
                     <div className="mb-12 relative">
-                        <figure className='image absolute brightness-35'>
-                            <img
-                                src={festival}
-                                className='aspect-2/3 md:aspect-6/3 w-full h-full object-cover object-[center_45%]'
-                            />
-                        </figure>
+                        <div className='brightness-35 h-125 md:h-250' style={divStyle}>
+                        </div>
                         <div className='absolute bottom-3 px-3 '>
-                            <div className='flex flex-col gap-3 md:w-200 md:p-20'>
+                            <div className='flex flex-col gap-3 md:w-200 md:p-5'>
                                 <figure className='image is-128x128 is-hidden-tablet'>
                                     <img className='' src={Norsu} />
                                 </figure>

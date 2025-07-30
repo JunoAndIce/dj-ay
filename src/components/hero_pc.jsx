@@ -51,7 +51,7 @@ const HeroPC = () => {
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faMusic} />
                                 </span>
-                                <Link className='!text-white' to='/dj-ay/music'>View Music</Link>
+                                <Link className='!text-white' to='/dj-ay/my-music'>View Music</Link>
                             </a>
                         </div>
                     </div>
