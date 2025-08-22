@@ -12,7 +12,6 @@ import festival from '../assets/images/festival.webp'
 import action from '../assets/images/action.webp'
 import clubs from '../assets/images/Clubs.webp'
 
-
 const Bio = () => {
 
     return (

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import HeroWebp from '../assets/images/hero.webp'
 import logo from '../assets/images/bazaartw.webp'
 
-
 const HeroPC = () => {
 
     const divStyle = {

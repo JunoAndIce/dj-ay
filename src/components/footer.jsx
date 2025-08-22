@@ -3,8 +3,6 @@ import { faApple, faInstagram, faSoundcloud, faSpotify, faTiktok, faXTwitter, fa
 import { Link } from 'react-router-dom';
 import logoW from '../assets/images/bazaartw.webp'
 
-
-
 const TreeIcon = () => (
     <svg
         role="img"

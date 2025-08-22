@@ -1,3 +1,5 @@
+
+
 const BlogPost = ({ post }) => {
   return (
     <div className="box mb-6">

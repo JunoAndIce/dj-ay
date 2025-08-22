@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Mix1 from '../assets/images/mix1.webp'
 import Mix2 from '../assets/images/mix2.webp'
 
-
-
 const Mixes = () => {
     
 

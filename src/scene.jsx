@@ -1,6 +1,5 @@
-import React, { forwardRef } from 'react';
-import { OrbitControls } from '@react-three/drei';
-import Wave from './Wave';
+import { forwardRef } from 'react';
+import Wave from './wave';
 
 const Scene = forwardRef((props, ref) => {
   return (

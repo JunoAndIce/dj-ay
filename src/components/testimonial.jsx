@@ -1,12 +1,9 @@
-import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClipboard } from '@fortawesome/free-regular-svg-icons';
-import HeroWebp from '../assets/images/hero.webp'
 import Casting from '../assets/images/casting.webp'
 import Apparel from '../assets/images/apparel.webp'
 import RVeggies from '../assets/images/rveggies.webp'
 import festival from '../assets/images/festival.webp'
 import Norsu from '../assets/images/norsu-logo.webp'
+
 const Testimonials = () => {
 
     const divStyle = {

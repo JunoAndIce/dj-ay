@@ -5,8 +5,6 @@ import BlogExpand from './blogExpand';
 import InstagramEmbed from './instagram';
 import BlogList from './bloglist';
 
-
-
 const Blog = () => {
   const [selectedId, setSelectedId] = useState(null);
   const selectedPost = posts.find(post => post.id === selectedId);
