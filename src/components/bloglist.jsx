@@ -1,4 +1,4 @@
-import BlogPost from './BlogPost';
+import BlogPost from './blogpost';
 
 const BlogList = ({ posts, onSelect }) => {
   return (
