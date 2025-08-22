@@ -102,12 +102,12 @@ const About = () => {
 
                         <div className='mt-5'>
 
-                            <a className='p-4 button is-fullwidth is-warning is-large is-responsive'>
+                            <div className='p-4 button is-fullwidth is-warning is-large is-responsive'>
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faClipboard} />
                                 </span>
                                 <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'} className='!text-black'>Book Now!</Link>
-                            </a>
+                            </div>
                         </div>
 
 

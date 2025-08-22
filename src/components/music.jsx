@@ -65,32 +65,32 @@ const Music = () => {
                                 <div className='mt-3'>
                                     <p className="type-body-md-special text-white mb-4">Experience DJ A.Y’s electrifying Afro‑Rhythm Universe on Spotify: dynamic, high‑energy mixes that pulse with the heart of Afrobeat. His playlists weave together chart‑toppers from stars like Burna Boy, Wizkid, and Omah Lay with fresh underground tunes and deeper cuts. Whether it’s mid-tempo grooves or bass‑driven Nigerians club classics, DJ A.Y curates a seamless journey through the sounds dominating dancefloors across Africa and the diaspora.</p>
                                     <div className='mt-10 buttons field is-grouped is-hidden-mobile'>
-                                        <a className='button is-large is-halfwidth'>
+                                        <div className='button is-large is-halfwidth'>
                                             <span className="icon">
                                                 <FontAwesomeIcon icon={faSpotify} />
                                             </span>
                                             <Link className='!text-white' to='https://open.spotify.com/artist/5JWt6rXnRhaGhP16v71xxg?si=8s7lfRo6SxCEthQ0aGMsPw'>View on Spotify</Link>
-                                        </a>
-                                        <a className=' button is-large is-halfwidth'>
+                                        </div>
+                                        <div className=' button is-large is-halfwidth'>
                                             <span className="icon">
                                                 <FontAwesomeIcon icon={faApple} />
                                             </span>
                                             <Link to='https://music.apple.com/us/artist/dj-a-y/1102499691' className='!text-white'>View on Apple Music</Link>
-                                        </a>
+                                        </div>
                                     </div>
                                     <div className='mt-10 buttons field is-grouped is-hidden-tablet'>
-                                        <a className='button is-small is-halfwidth'>
+                                        <div className='button is-small is-halfwidth'>
                                             <span className="icon">
                                                 <FontAwesomeIcon icon={faSpotify} />
                                             </span>
                                             <Link className='!text-white' to='https://open.spotify.com/artist/5JWt6rXnRhaGhP16v71xxg?si=8s7lfRo6SxCEthQ0aGMsPw'>View on Spotify</Link>
-                                        </a>
-                                        <a className=' button is-small is-halfwidth'>
+                                        </div>
+                                        <div className=' button is-small is-halfwidth'>
                                             <span className="icon">
                                                 <FontAwesomeIcon icon={faApple} />
                                             </span>
                                             <Link to='https://music.apple.com/us/artist/dj-a-y/1102499691' className='!text-white'>View on Apple Music</Link>
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

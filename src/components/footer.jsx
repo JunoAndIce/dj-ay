@@ -27,7 +27,7 @@ const TreeIcon = () => (
 const Footer = () => {
     return (
         <>
-            <footer className="color-bg-transition z-20 flex flex-col items-start justify-end self-stretch px-layout-responsive-spacing-outer-margin-lg pt-layout-responsive-spacing-outer-margin-lg bg-background-surface border-t border-divider-primary bg-background-surface">
+            <footer className="color-bg-transition z-20 flex flex-col items-start justify-end self-stretch px-layout-responsive-spacing-outer-margin-lg pt-layout-responsive-spacing-outer-margin-lg bg-background-surface border-t border-divider-primary bg-background-surface mt-50">
                 <div className='flex flex-col '>
                     <div className='flex justify-between items-center'>
                         <Link className='' to='/dj-ay'>

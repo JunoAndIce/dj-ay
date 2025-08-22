@@ -50,12 +50,12 @@ const Navbar = () => {
               alt='Logo'
             />
           </Link>
-          <div class="navbar-start is-hidden-touch px-4">
-            <Link to='/dj-ay'><a className='navbar-item ml-5'>Home</a></Link>
-            <Link to='/dj-ay/about-me'><a className='navbar-item ml-5'>About Me</a></Link>
-            <Link to='/dj-ay/news'><a className='navbar-item ml-5'>News</a></Link>
-            <Link to='/dj-ay/my-music'><a className='navbar-item ml-5'>My Music</a></Link>
-            <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'}><a className='navbar-item ml-5'>Contact Me</a></Link>
+          <div className="navbar-start is-hidden-touch px-4">
+            <Link to='/dj-ay'className='navbar-item ml-5'>Home</Link>
+            <Link to='/dj-ay/about-me'className='navbar-item ml-5'>About Me</Link>
+            {/* <Link to='/dj-ay/news' className='navbar-item ml-5'>News</Link> */}
+            <Link to='/dj-ay/my-music' className='navbar-item ml-5'>My Music</Link>
+            <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'} className='navbar-item ml-5'>Contact Me</Link>
           </div>
 
           <div className='navbar-end is-hidden-tablet'>

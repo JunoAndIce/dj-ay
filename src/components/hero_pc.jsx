@@ -41,18 +41,18 @@ const HeroPC = () => {
                         </div>
 
                         <div className="buttons field is-grouped">
-                            <a className="button is-large">
+                            <div className="button is-large">
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faClipboard} />
                                 </span>
                                 <Link className='!text-white' onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'}>Book Now</Link>
-                            </a>
-                            <a className="button is-large is">
+                            </div>
+                            <div className="button is-large is">
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faMusic} />
                                 </span>
                                 <Link className='!text-white' to='/dj-ay/my-music'>View Music</Link>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>

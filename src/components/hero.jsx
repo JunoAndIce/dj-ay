@@ -31,18 +31,18 @@ const Hero = () => {
 
 
                     <div className='buttons field is-grouped'>
-                        <a className=' button is-small is-fullwidth'>
+                        <div className=' button is-small is-fullwidth'>
                             <span className="icon">
                                 <FontAwesomeIcon icon={faClipboard} />
                             </span>
                             <Link className='!text-white' onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'}>Book Now</Link>
-                        </a>
-                        <a className=' button is-small is-fullwidth'>
+                        </div>
+                        <div className=' button is-small is-fullwidth'>
                             <span className="icon">
                                 <FontAwesomeIcon icon={faMusic} />
                             </span>
                             <Link to='/dj-ay/my-music' className='!text-white'>View Music</Link>
-                        </a>
+                        </div>
                     </div>
 
                     <FontAwesomeIcon icon={faChevronDown} className='text-xs text-white' bounce />
