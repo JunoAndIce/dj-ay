@@ -1,10 +1,8 @@
-import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple, faInstagram, faSoundcloud, faSpotify, faTiktok, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faClipboard } from '@fortawesome/free-regular-svg-icons';
-import HeroWebp from '../assets/images/hero.webp'
-import logoW from '../assets/images/bazaartw.webp'
 import { Link } from 'react-router-dom';
+import logoW from '../assets/images/bazaartw.webp'
+
 
 
 const TreeIcon = () => (

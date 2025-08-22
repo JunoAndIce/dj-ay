@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
 import { Canvas } from '@react-three/fiber';
-import Scene from '../scene';
 import { useRef } from 'react';
+import Scene from '../scene';
+
 
 const MainCanvas = () => {
 

@@ -1,9 +1,10 @@
 import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
+import { Link } from 'react-router-dom';
 import HeroWebp from '../assets/images/hero.webp'
 import logo from '../assets/images/logo.webp'
-import { Link } from 'react-router-dom';
+
 const Hero = () => {
 
     const divStyle = {

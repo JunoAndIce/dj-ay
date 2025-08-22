@@ -4,14 +4,14 @@ import { Canvas } from '@react-three/fiber';
 import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
-import Scene from '../scene';
+import { Link } from 'react-router-dom';
 import heroImg from '../assets/images/AYO.webp'
 import party from '../assets/images/party.webp'
 import stand from '../assets/images/stand.webp'
 import festival from '../assets/images/festival.webp'
 import action from '../assets/images/action.webp'
 import clubs from '../assets/images/Clubs.webp'
-import { Link } from 'react-router-dom';
+
 
 const Bio = () => {
 

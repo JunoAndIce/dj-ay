@@ -1,6 +1,3 @@
-import CommentSection from './comments';
-import EmojiReactions from './emojis';
-
 const BlogPost = ({ post }) => {
   return (
     <div className="box mb-6">

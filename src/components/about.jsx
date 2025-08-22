@@ -1,15 +1,11 @@
-import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 import { ScrollTrigger } from 'gsap/all';
 import { Link } from 'react-router-dom';
 import party from '../assets/images/party.webp'
 import festival from '../assets/images/ay-09.webp'
 import clubs from '../assets/images/Clubs.webp'
-
+import gsap from 'gsap';
 
 gsap.registerPlugin(ScrollTrigger);
 

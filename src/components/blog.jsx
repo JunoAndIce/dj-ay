@@ -1,9 +1,11 @@
 // components/Blog.jsx
 import { useState } from 'react';
-import BlogList from './bloglist';
 import { posts } from '../data/posts';
 import BlogExpand from './blogExpand';
 import InstagramEmbed from './instagram';
+import BlogList from './bloglist';
+
+
 
 const Blog = () => {
   const [selectedId, setSelectedId] = useState(null);

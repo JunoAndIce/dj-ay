@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { useMenu } from '../context/menuProvider';
-import gsap from 'gsap';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+
 
 const Menu = () => {
   const { isMenuOpen, closeMenu } = useMenu();
