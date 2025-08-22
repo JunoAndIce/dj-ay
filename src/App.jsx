@@ -1,4 +1,4 @@
-import './app.css';
+import './App.css';
 import './main.scss';
 import Router from './components/router';
 
