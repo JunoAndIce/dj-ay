@@ -53,10 +53,10 @@ const Menu = () => {
       className="menu bg-black text-white mt-[4.5rem] p-6 fixed inset-0 z-50"
     >
       <ul ref={listRef} className="flex flex-col items-center gap-30 type-headline-xxs uppercase">
-        <Link to='/dj-ay'><li>Home</li></Link>
-        <Link to='/dj-ay/about-me'><li>About Me</li></Link>
-        {/* <Link to='/dj-ay/news'><li>News</li></Link> */}
-        <Link to='/dj-ay/my-music'><li>My Music</li></Link>
+        <Link to=''><li>Home</li></Link>
+        <Link to='/about-me'><li>About Me</li></Link>
+        {/* <Link to='/news'><li>News</li></Link> */}
+        <Link to='/my-music'><li>My Music</li></Link>
         <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'}><li>Contact Me</li></Link>
       </ul>
     </aside>

@@ -37,7 +37,7 @@ const About = () => {
                             <div className='text-base '>
                                 <p className='text-xl font-extrabold md:text-5xl md:w-200 lg:w-250'> <span className='bg-gradient-to-r from-amber-500 to-red-400 bg-clip-text text-transparent'> Hailing from Houston, Texas: </span><br /> DJ A.Y. is one of the most versatile and rising DJs in the Texas music scene, gaining recognition for his high-energy sets and seamless genre-blending — especially within Afrobeats. </p>
                                 <div className='mt-4'>
-                                    <Link className='p-2 button is-fullwidth is-small is-warning is-outlined mt-5' to='/dj-ay/about-me'>
+                                    <Link className='p-2 button is-fullwidth is-small is-warning is-outlined mt-5' to='/about-me'>
                                         Read More
                                     </Link>
                                 </div>

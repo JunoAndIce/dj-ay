@@ -42,7 +42,7 @@ const Hero = () => {
                             <span className="icon">
                                 <FontAwesomeIcon icon={faMusic} />
                             </span>
-                            <Link to='/dj-ay/my-music' className='!text-white'>View Music</Link>
+                            <Link to='/my-music' className='!text-white'>View Music</Link>
                         </div>
                     </div>
 

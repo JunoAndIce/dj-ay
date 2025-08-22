@@ -42,7 +42,7 @@ const Navbar = () => {
         style={{ ...bgStyle, transition: 'background-color 0.3s ease' }}
       >
         <div className='navbar-brand justify-between w-full px-4 py-2'>
-          <Link className='navbar-item' to='/dj-ay'>
+          <Link className='navbar-item' to=''>
             <img
               className={`h-10 transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : 'opacity-100'
                 }`}
@@ -51,10 +51,10 @@ const Navbar = () => {
             />
           </Link>
           <div className="navbar-start is-hidden-touch px-4">
-            <Link to='/dj-ay'className='navbar-item ml-5'>Home</Link>
-            <Link to='/dj-ay/about-me'className='navbar-item ml-5'>About Me</Link>
-            {/* <Link to='/dj-ay/news' className='navbar-item ml-5'>News</Link> */}
-            <Link to='/dj-ay/my-music' className='navbar-item ml-5'>My Music</Link>
+            <Link to=''className='navbar-item ml-5'>Home</Link>
+            <Link to='/about-me'className='navbar-item ml-5'>About Me</Link>
+            {/* <Link to='/news' className='navbar-item ml-5'>News</Link> */}
+            <Link to='/my-music' className='navbar-item ml-5'>My Music</Link>
             <Link onClick={() => window.location.href = 'mailto:dja.yofficial2@gmail.com'} className='navbar-item ml-5'>Contact Me</Link>
           </div>
 
