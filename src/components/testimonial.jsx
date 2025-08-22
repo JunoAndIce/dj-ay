@@ -5,7 +5,7 @@ import HeroWebp from '../assets/images/hero.webp'
 import Casting from '../assets/images/casting.webp'
 import Apparel from '../assets/images/apparel.webp'
 import RVeggies from '../assets/images/rveggies.webp'
-import festival from '../assets/images/Festival.webp'
+import festival from '../assets/images/festival.webp'
 import Norsu from '../assets/images/norsu-logo.webp'
 const Testimonials = () => {
 
