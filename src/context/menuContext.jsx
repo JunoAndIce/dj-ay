@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 // 1. Create context
 const MenuContext = createContext();
@@ -7,7 +7,7 @@ const MenuContext = createContext();
 export const MenuProvider = ({ children }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const toggleMenu = () => setMenuOpen(prev => !prev);
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -17,5 +17,4 @@ export const MenuProvider = ({ children }) => {
   );
 };
 
-// 3. Custom hook for usage
-export const useMenu = () => useContext(MenuContext);
+export default MenuContext;

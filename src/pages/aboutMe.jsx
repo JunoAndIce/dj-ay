@@ -1,9 +1,7 @@
 
 import { useEffect, useLayoutEffect } from 'react';
-import { MenuProvider } from '../context/menuProvider'; // adjust path if needed
-import Hero from '../components/hero';
+import { MenuProvider } from '../context/menuContext'; // adjust path if needed
 import Navbar from "../components/navbar";
-import About from "../components/about";
 import Menu from '../components/menu'
 import Bio from '../components/bio';
 import Footer from '../components/footer';

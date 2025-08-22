@@ -10,7 +10,7 @@ const Layout = () => (
 
 const router = createBrowserRouter([
   {
-    path: '/dj-ay',
+    path: '/',
     element: <Layout />,
     children: routes,
   },

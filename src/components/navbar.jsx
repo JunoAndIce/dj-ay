@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useMenu } from '../context/menuProvider';
+import { useMenu } from '../context/useMenu';
 import Hamburger from 'hamburger-react';
 import logo from '../assets/images/bazaart.webp'
 import { Link } from 'react-router-dom';

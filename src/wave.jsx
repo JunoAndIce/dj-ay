@@ -1,13 +1,10 @@
-import React, { forwardRef, useImperativeHandle, useRef } from 'react';
+import { forwardRef, useImperativeHandle, useRef } from 'react';
 import { useFrame, extend } from '@react-three/fiber';
 import * as THREE from 'three';
-import { useControls } from 'leva';
-import { shaderMaterial, useHelper } from '@react-three/drei';
+import { shaderMaterial } from '@react-three/drei';
 import vertex from './shaders/vert.glsl';
 import fragment from './shaders/frag.glsl';
 import useMusicAnalyser from './hooks/audioAnalyser';
-import GUI from 'three/examples/jsm/libs/lil-gui.module.min.js';
-import { Number } from 'three/examples/jsm/transpiler/AST.js';
 
 import { RenderPass } from 'three/examples/jsm/Addons.js';
 
@@ -27,13 +24,13 @@ const WaveShaderMaterial = shaderMaterial(
     fragment
 );
 
-const initColor = new THREE.Color('hotpink');
+// const initColor = new THREE.Color('hotpink');
 
-const params = {
-  red: initColor.r,
-  green: initColor.g,
-  blue: initColor.b,
-};
+// const params = {
+//   red: initColor.r,
+//   green: initColor.g,
+//   blue: initColor.b,
+// };
 
 extend({ WaveShaderMaterial });
 

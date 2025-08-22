@@ -1,7 +1,3 @@
-import { Suspense } from 'react';
-import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
-import { Canvas } from '@react-three/fiber';
-import { faChevronDown, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';

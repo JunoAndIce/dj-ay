@@ -6,14 +6,13 @@ import Mix1 from '../assets/images/IMG_9211.webp'
 import SpotifyT from '../assets/images/spotifyw.png'
 import Apple from '../assets/images/apple-w.png'
 
-
 const Music = () => {
-    
+
     const divStyle = {
-            backgroundImage: 'url(' + Mix1 + ')',
-            backgroundSize: 'cover',       // ensures the image covers the container
-            backgroundPosition: '50% 55%',  // centers the image
-            backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
+        backgroundImage: 'url(' + Mix1 + ')',
+        backgroundSize: 'cover',       // ensures the image covers the container
+        backgroundPosition: '50% 55%',  // centers the image
+        backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
     };
 
     return (
@@ -44,7 +43,7 @@ const Music = () => {
                                         <img className='!h-10' src={SpotifyT} />
                                     </figure>
 
-                                
+
                                     <div className='font-extrabold text-7xl is-hidden-mobile'>
                                         X
                                     </div>
@@ -61,7 +60,7 @@ const Music = () => {
 
                                 </div>
                                 <div className='mt-3'>
-                                    <p className="type-body-md-special text-white mb-4">Experience DJ A.Y’s electrifying Afro‑Rhythm Universe on Spotify: dynamic, high‑energy mixes that pulse with the heart of Afrobeat. His playlists weave together chart‑toppers from stars like Burna Boy, Wizkid, and Omah Lay with fresh underground tunes and deeper cuts. Whether it’s mid-tempo grooves or bass‑driven Nigerians club classics, DJ A.Y curates a seamless journey through the sounds dominating dancefloors across Africa and the diaspora.</p>
+                                    <p className="type-body-md-special text-white mb-4">Experience DJ A.Y’s electrifying Afro‑Rhythm Universe on Spotify: dynamic, high-energy mixes that pulse with the heart of Afrobeat. His playlists weave together chart-toppers from stars like Burna Boy, Wizkid, and Omah Lay with fresh underground tunes and deeper cuts. Whether it's mid-tempo grooves or bass-driven Nigerians club classics, DJ A.Y curates a seamless journey through the sounds dominating dancefloors across Africa and the diaspora.</p>
                                     <div className='mt-10 buttons field is-grouped is-hidden-mobile'>
                                         <div className='button is-large is-halfwidth'>
                                             <span className="icon">

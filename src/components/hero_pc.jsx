@@ -6,14 +6,7 @@ import HeroWebp from '../assets/images/hero.webp'
 import logo from '../assets/images/bazaartw.webp'
 
 const HeroPC = () => {
-
-    const divStyle = {
-        backgroundImage: 'url(' + HeroWebp + ')',
-        backgroundSize: 'contain',       // ensures the image covers the container
-        backgroundPosition: '100% 20%',  // centers the image
-        backgroundRepeat: 'no-repeat', // prevents tiling // applies grayscale filter
-        filter: 'grayscale(100%)' // applies grayscale filter
-    };
+    
     return (
         <>
             <section className="hero is-fullheight relative is-hidden-mobile">

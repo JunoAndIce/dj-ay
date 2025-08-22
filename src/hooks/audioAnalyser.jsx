@@ -21,7 +21,7 @@ export default function useMusicAnalyser(audioUrl = '/assets/music/rush.mp3', ff
       //   window.removeEventListener('click', onClick);
       // };
 
-      window.addEventListener('click', onClick);
+      // window.addEventListener('click', onClick);
     });
 
     return () => {

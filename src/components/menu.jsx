@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { useMenu } from '../context/menuProvider';
+import { useMenu } from '../context/useMenu';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
 
 const Menu = () => {
-  const { isMenuOpen, closeMenu } = useMenu();
+  const { isMenuOpen } = useMenu();
   const asideRef = useRef(null);
   const listRef = useRef(null);
 

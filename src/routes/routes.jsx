@@ -5,22 +5,10 @@ import MyMusic from '../pages/myMusic';
 // import Contact from '../pages/contact'; // Add if needed
 
 const routes = [
-  {
-    path: '',
-    element: <Home />,
-  },
-  {
-    path: 'about-me',
-    element: <AboutMe />,
-  },
-  {
-    path: 'news',
-    element: <News />,
-  },
-  {
-    path: 'my-music',
-    element: <MyMusic />,
-  },
+  { path: '/', element: <Home />},
+  { path: 'about-me', element: <AboutMe />},
+  { path: 'news', element: <News />},
+  { path: 'my-music', element: <MyMusic /> },
   // {
   //   path: '/contact',
   //   element: <Contact />,
