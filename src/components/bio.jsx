@@ -13,7 +13,7 @@ const Bio = () => {
     return (
         <>
             <section className='section !p-0 relative'>
-                <figure className='image !mt-20 absolute brightness-35'>
+                <figure className='image !mt-15 absolute brightness-35'>
                     <img
                         src={heroImg}
                         className='aspect-3/1 md:aspect-6/1 w-full h-full object-cover object-[center_45%]'
