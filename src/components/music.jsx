@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import Mix1 from '../assets/images/IMG_9211.webp'
 import Mix2 from '../assets/images/mix2.webp'
-import festival from '../assets/images/Festival.webp'
+import festival from '../assets/images/festival.webp'
 import SpotifyT from '../assets/images/spotifyw.png'
 import Apple from '../assets/images/apple-w.png'
 
