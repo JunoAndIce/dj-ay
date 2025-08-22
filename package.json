@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist",
-    "start": "serve -s dist -l $PORT"
+    "start": "serve -s dist -l $PORT",
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "@fancyapps/ui": "^6.0.5",
